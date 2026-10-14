@@ -1,0 +1,49 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block titulo %}Diagnóstico USM{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'diagnostico/css/estilos.css' %}">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <aside class="menu-lateral">
+            <h2 class="logo">USM</h2>
+            <p class="subtitulo">Nivelación académica</p>
+
+
+            <nav>
+
+                <a href="{% url 'inicio' %}"
+                class="{% if request.resolver_match.url_name == 'inicio' %}activo{% endif %}">
+                    Inicio
+                </a>
+
+                <a href="{% url 'evaluacion' %}"
+                class="{% if request.resolver_match.url_name == 'evaluacion' %}activo{% endif %}">
+                    Evaluaciones
+                </a>
+
+                <span>Resultados</span>
+                <span>Recursos</span>
+
+            </nav>
+
+        </aside>
+
+        <main class="contenido">
+            {% block contenido %}
+            {% endblock %}
+        </main>
+
+    </div>
+
+</body>
+</html>

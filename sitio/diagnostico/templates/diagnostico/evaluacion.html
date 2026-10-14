@@ -1,136 +1,219 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Evaluación en Cascada - USM</title>
+{% extends 'diagnostico/base.html' %}
 
-    <link rel="stylesheet"
-          href="{% static 'diagnostico/css/estilos.css' %}">
-</head>
-<body>
+{% block titulo %}
+Evaluaciones | Diagnóstico USM
+{% endblock %}
 
-    <!-- Barra de Navegación -->
-    <nav class="navbar">
-        <div>
-            <div class="brand-title">Monas Chinas Team</div>
-            <div class="brand-subtitle">Nivelación Ciencias Básicas</div>
-        </div>
-        <div style="background-color: #e2e8f0; color: #003366; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-            Estudiante USM
-        </div>
-    </nav>
-    
-<!-- PANEL LATERAL: TEMARIO DE LA EVALUACIÓN -->
-<aside class="syllabus-sidebar">
-    <h2>Temario</h2>
-    <p class="syllabus-description">
-        Consulta los contenidos de la evaluación.
+{% block contenido %}
+
+<!-- Encabezado principal -->
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        EVALUACIONES DIAGNÓSTICAS
     </p>
 
-    <details class="syllabus-section">
-        <summary>Física</summary>
-        <div class="syllabus-content">
-            <ul>
-                <li>Sistemas de unidades y conversiones.</li>
-                <li>Cinemática: posición, velocidad y aceleración.</li>
-                <li>Leyes de Newton y fuerzas.</li>
-                <li>Trabajo, energía y potencia.</li>
-            </ul>
-        </div>
-    </details>
+    <h1>Descubre tus conocimientos</h1>
 
-    <details class="syllabus-section">
-        <summary>Química</summary>
-        <div class="syllabus-content">
-            <ul>
-                <li>Estructura atómica y tabla periódica.</li>
-                <li>Enlaces químicos.</li>
-                <li>Nomenclatura de compuestos básicos.</li>
-                <li>Mol, masa molar y estequiometría.</li>
-            </ul>
-        </div>
-    </details>
+    <p>
+        Selecciona una asignatura y explora los
+        contenidos que podrás evaluar.
+    </p>
 
-    <details class="syllabus-section">
-        <summary>Matemática</summary>
-        <div class="syllabus-content">
-            <ul>
-                <li>Operaciones con números reales y fracciones.</li>
-                <li>Potencias, raíces y productos notables.</li>
-                <li>Ecuaciones y funciones.</li>
-                <li>Trigonometría y funciones inversas.</li>
-                <li>Nociones iniciales de límites.</li>
-            </ul>
-        </div>
-    </details>
-</aside>
+</section>
 
 
-    <!-- CONTENEDOR FLOTANTE: TEMPORIZADOR -->
-    <div class="timer-sidebar">
-        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted);">Tiempo Restante</div>
-        <div class="timer-digits" id="countdown">40:00</div>
+<!-- Selección de asignaturas -->
+
+<section class="seccion">
+
+    <h2>Asignaturas disponibles</h2>
+
+    <div class="tarjetas">
+
+        <!-- Matemáticas -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">∑</div>
+
+            <h3>Matemáticas</h3>
+
+            <p>
+                Evalúa tus conocimientos en
+                álgebra, funciones y trigonometría.
+            </p>
+
+            <a href="#matematicas" class="boton">
+                Ver temas →
+            </a>
+            
+            <a href="{% url 'instrucciones' 'matematicas' %}"
+            class="boton boton-dorado">
+                Comenzar diagnóstico →
+            </a>
+
+
+        </article>
+
+
+        <!-- Física -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">⚛</div>
+
+            <h3>Física</h3>
+
+            <p>
+                Revisa conceptos fundamentales
+                de movimiento, fuerza y energía.
+            </p>
+
+            <a href="{% url 'instrucciones' 'fisica' %}"
+            class="boton boton-dorado">
+                Comenzar diagnóstico →
+            </a>
+
+        </article>
+
+
+        <!-- Química -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">⚗</div>
+
+            <h3>Química</h3>
+
+            <p>
+                Explora fundamentos de
+                estructura atómica y enlaces.
+            </p>
+
+            <span class="proximamente">
+                Próximamente
+            </span>
+
+        </article>
+
     </div>
 
-    <!-- CONTENEDOR DE PREGUNTAS EN CASCADA -->
-    <main class="main-container">
-        
-        <div class="header-card">
-            <h1 style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">¿QUÉ TANTO SABES?</h1>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Responde antes de que el tiempo termine!!</p>
+</section>
+
+
+<!-- Temas de matemáticas -->
+
+<section class="panel-temas" id="matematicas">
+
+    <h2>Temas de Matemáticas</h2>
+
+    <p>
+        Explora las áreas que formarán parte
+        de las evaluaciones diagnósticas.
+    </p>
+
+
+    <!-- Tema 1 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Números y operaciones</h3>
+            <p>
+                Fracciones, potencias, raíces
+                y operaciones básicas.
+            </p>
         </div>
 
-        <!-- PREGUNTA 1 -->
-        <div class="question-card">
-            <div class="question-meta">
-                <span>Pregunta 1 de 3</span>
-                <span class="question-topic">Álgebra y Funciones</span>
-            </div>
-            <h3>¿Cuál es el dominio de la función inversa correspondiente a los vacíos críticos de trigonometría?</h3>
-            <div class="options-list">
-                <label class="option-item">
-                    <input type="radio" name="p1">
-                    <span>Todos los números reales positivos incluyendo el cero.</span>
-                </label>
-                <label class="option-item">
-                    <input type="radio" name="p1">
-                    <span>El intervalo abierto limitado por la cobertura curricular.</span>
-                </label>
-                <label class="option-item">
-                    <input type="radio" name="p1">
-                    <span>Restricciones estructurales excluyendo raíces básicas.</span>
-                </label>
-            </div>
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 2 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Álgebra</h3>
+            <p>
+                Expresiones algebraicas,
+                ecuaciones y factorización.
+            </p>
         </div>
 
-        <!-- PREGUNTA 2 -->
-        <div class="question-card">
-            <div class="question-meta">
-                <span>Pregunta 2 de 3</span>
-                <span class="question-topic">Límites Iniciales</span>
-            </div>
-            <h3>¿Qué vacíos conceptuales clave del programa PINVU complican el rendimiento en cálculo inicial de la USM?</h3>
-            <div class="options-list">
-                <label class="option-item">
-                    <input type="radio" name="p2">
-                    <span>Operaciones aritméticas elementales y potencias básicas.</span>
-                </label>
-                <label class="option-item">
-                    <input type="radio" name="p2">
-                    <span>Función inversa, trigonometría y nociones iniciales de límites.</span>
-                </label>
-                <label class="option-item">
-                    <input type="radio" name="p2">
-                    <span>Productos notables y sumas de fracciones algebraicas.</span>
-                </label>
-            </div>
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 3 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Funciones</h3>
+            <p>
+                Dominio, recorrido, gráficos
+                y función inversa.
+            </p>
         </div>
-    <script src="{% static 'diagnostico/js/evaluacion.js' %}"></script>
-</body>
-</html>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 4 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Geometría</h3>
+            <p>
+                Figuras, áreas, perímetros
+                y conceptos geométricos.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 5 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Trigonometría</h3>
+            <p>
+                Razones trigonométricas,
+                ángulos e identidades básicas.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
     
 
 

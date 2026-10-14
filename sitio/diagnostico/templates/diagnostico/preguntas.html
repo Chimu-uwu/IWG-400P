@@ -1,0 +1,113 @@
+
+{% extends 'diagnostico/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Evaluación de {{ asignatura }} | USM
+{% endblock %}
+
+{% block contenido %}
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        EVALUACIÓN DIAGNÓSTICA
+    </p>
+
+    <h1>Diagnóstico de {{ asignatura }}</h1>
+
+    <p>
+        Lee cada pregunta y selecciona
+        la alternativa que consideres correcta.
+    </p>
+
+</section>
+
+<!-- CONTENEDOR DE LA EVALUACIÓN -->
+
+<section class="panel-preguntas"
+         id="evaluacion-interactiva"
+         data-asignatura="{{ codigo_asignatura }}">
+
+    <!-- CABECERA -->
+
+    <div class="cabecera-preguntas">
+
+        <h2 id="numero-pregunta">
+            Pregunta 1 de 3
+        </h2>
+
+        <div class="temporizador" id="temporizador">
+            40:00
+        </div>
+
+    </div>
+
+    <!-- BARRA DE PROGRESO -->
+
+    <div class="barra-progreso">
+        <div class="progreso-relleno"
+             id="progreso-relleno">
+        </div>
+    </div>
+
+    <!-- PREGUNTA -->
+
+    <div class="contenido-pregunta">
+
+        <h3 id="enunciado">
+            Aquí aparecerá la pregunta.
+        </h3>
+
+        <!-- Alternativas generadas con JavaScript -->
+
+        <div id="alternativas"
+             class="lista-alternativas">
+        </div>
+
+    </div>
+
+    <!-- BOTONES -->
+
+    <div class="acciones-evaluacion">
+
+        <button id="btn-anterior"
+                class="boton-secundario"
+                type="button">
+            ← Anterior
+        </button>
+
+        <button id="btn-siguiente"
+                class="boton"
+                type="button">
+            Siguiente →
+        </button>
+
+    </div>
+
+    <!-- Mensaje al terminar la demostración -->
+
+    <div id="mensaje-final"
+         class="mensaje-final"
+         hidden>
+
+        <h2>¡Demostración finalizada!</h2>
+
+        <p>
+            Has recorrido las preguntas de ejemplo.
+            Los resultados reales se implementarán
+            en una etapa posterior.
+        </p>
+
+        <a href="{% url 'evaluacion' %}"
+           class="boton">
+            Volver a evaluaciones
+        </a>
+
+    </div>
+
+</section>
+
+<script src="{% static 'diagnostico/js/script.js' %}" defer></script>
+
+{% endblock %}
