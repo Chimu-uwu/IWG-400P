@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evaluación en Cascada - USM</title>
+
+    <link rel="stylesheet"
+          href="{% static 'diagnostico/css/estilos.css' %}">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div>
+            <div class="brand-title">Monas Chinas Team</div>
+            <div class="brand-subtitle">Nivelación Ciencias Básicas</div>
+        </div>
+        <div style="background-color: #e2e8f0; color: #003366; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
+            Estudiante USM
+        </div>
+    </nav>
+    
+<!-- PANEL LATERAL: TEMARIO DE LA EVALUACIÓN -->
+<aside class="syllabus-sidebar">
+    <h2>Temario</h2>
+    <p class="syllabus-description">
+        Consulta los contenidos de la evaluación.
+    </p>
+
+    <details class="syllabus-section">
+        <summary>Física</summary>
+        <div class="syllabus-content">
+            <ul>
+                <li>Sistemas de unidades y conversiones.</li>
+                <li>Cinemática: posición, velocidad y aceleración.</li>
+                <li>Leyes de Newton y fuerzas.</li>
+                <li>Trabajo, energía y potencia.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="syllabus-section">
+        <summary>Química</summary>
+        <div class="syllabus-content">
+            <ul>
+                <li>Estructura atómica y tabla periódica.</li>
+                <li>Enlaces químicos.</li>
+                <li>Nomenclatura de compuestos básicos.</li>
+                <li>Mol, masa molar y estequiometría.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="syllabus-section">
+        <summary>Matemática</summary>
+        <div class="syllabus-content">
+            <ul>
+                <li>Operaciones con números reales y fracciones.</li>
+                <li>Potencias, raíces y productos notables.</li>
+                <li>Ecuaciones y funciones.</li>
+                <li>Trigonometría y funciones inversas.</li>
+                <li>Nociones iniciales de límites.</li>
+            </ul>
+        </div>
+    </details>
+</aside>
+
+
+    <!-- CONTENEDOR FLOTANTE: TEMPORIZADOR -->
+    <div class="timer-sidebar">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted);">Tiempo Restante</div>
+        <div class="timer-digits" id="countdown">40:00</div>
+    </div>
+
+    <!-- CONTENEDOR DE PREGUNTAS EN CASCADA -->
+    <main class="main-container">
+        
+        <div class="header-card">
+            <h1 style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">¿QUÉ TANTO SABES?</h1>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Responde antes de que el tiempo termine!!</p>
+        </div>
+
+        <!-- PREGUNTA 1 -->
+        <div class="question-card">
+            <div class="question-meta">
+                <span>Pregunta 1 de 3</span>
+                <span class="question-topic">Álgebra y Funciones</span>
+            </div>
+            <h3>¿Cuál es el dominio de la función inversa correspondiente a los vacíos críticos de trigonometría?</h3>
+            <div class="options-list">
+                <label class="option-item">
+                    <input type="radio" name="p1">
+                    <span>Todos los números reales positivos incluyendo el cero.</span>
+                </label>
+                <label class="option-item">
+                    <input type="radio" name="p1">
+                    <span>El intervalo abierto limitado por la cobertura curricular.</span>
+                </label>
+                <label class="option-item">
+                    <input type="radio" name="p1">
+                    <span>Restricciones estructurales excluyendo raíces básicas.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 2 -->
+        <div class="question-card">
+            <div class="question-meta">
+                <span>Pregunta 2 de 3</span>
+                <span class="question-topic">Límites Iniciales</span>
+            </div>
+            <h3>¿Qué vacíos conceptuales clave del programa PINVU complican el rendimiento en cálculo inicial de la USM?</h3>
+            <div class="options-list">
+                <label class="option-item">
+                    <input type="radio" name="p2">
+                    <span>Operaciones aritméticas elementales y potencias básicas.</span>
+                </label>
+                <label class="option-item">
+                    <input type="radio" name="p2">
+                    <span>Función inversa, trigonometría y nociones iniciales de límites.</span>
+                </label>
+                <label class="option-item">
+                    <input type="radio" name="p2">
+                    <span>Productos notables y sumas de fracciones algebraicas.</span>
+                </label>
+            </div>
+        </div>
+    <script src="{% static 'diagnostico/js/evaluacion.js' %}"></script>
+</body>
+</html>
+    
+
+
+
