@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+
+# Base de datos local de Django
+sitio/db.sqlite3
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Configuraciones locales de VS Code
+.vscode/
+
+# Variables de entorno (para contraseñas o claves secretas futuras)
+.env
+
+# Archivos ocultos del sistema operativo (Windows/Mac)
+Thumbs.db
+.DS_Store
