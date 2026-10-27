@@ -1,0 +1,163 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | Nivelación USM</title>
+
+    <link rel="stylesheet"
+          href="{% static 'usuarios/css/usuarios.css' %}">
+</head>
+
+<body>
+
+    <div class="contenedor-login">
+
+        <!-- LADO IZQUIERDO: PRESENTACIÓN -->
+
+        <section class="panel-presentacion">
+
+            <div class="marca">
+                <h1>USM</h1>
+                <p>Nivelación académica</p>
+            </div>
+
+            <div class="mensaje-presentacion">
+
+                <span class="etiqueta">
+                    TU APRENDIZAJE COMIENZA AQUÍ
+                </span>
+
+                <h2>
+                    Descubre tus fortalezas.
+                    Supera tus desafíos.
+                </h2>
+
+                <p>
+                    Una plataforma diseñada para ayudarte
+                    a identificar tus vacíos conceptuales
+                    y reforzar tus conocimientos.
+                </p>
+
+                <div class="decoracion">
+                    ∑ &nbsp; π &nbsp; ∫ &nbsp; √x
+                </div>
+
+            </div>
+
+            <p class="pie-presentacion">
+                Plataforma de apoyo académico
+            </p>
+
+        </section>
+
+
+        <!-- LADO DERECHO: FORMULARIO -->
+
+        <main class="panel-formulario">
+
+            <div class="formulario-contenido">
+
+                <p class="etiqueta-formulario">
+                    BIENVENIDO DE NUEVO
+                </p>
+
+                <h2>Iniciar sesión</h2>
+
+                <p class="descripcion">
+                    Ingresa tus datos para continuar
+                    con tu aprendizaje.
+                </p>
+
+                <form>
+
+                    <!-- CORREO ELECTRÓNICO -->
+
+                    <div class="grupo-campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div class="grupo-campo">
+
+                        <label for="contrasena">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Ingresa tu contraseña"
+                            autocomplete="current-password"
+                            required>
+
+                    </div>
+
+
+                    <!-- RECUPERACIÓN DE CONTRASEÑA -->
+
+                    <p class="recuperar">
+                        ¿Olvidaste tu contraseña?
+                        <span class="texto-pendiente">
+                            Próximamente
+                        </span>
+                    </p>
+
+
+                    <!-- BOTÓN DE ACCESO -->
+
+                    <button
+                        type="button"
+                        class="boton-ingresar"
+                        disabled>
+                        Iniciar sesión
+                    </button>
+
+                    <p class="aviso-prototipo">
+                        El inicio de sesión estará disponible
+                        cuando se integre la autenticación.
+                    </p>
+
+                </form>
+
+
+                <!-- ENLACE AL REGISTRO -->
+
+                <p class="enlace-registro">
+                    ¿Todavía no tienes una cuenta?
+
+                    <a href="{% url 'registro' %}">
+                        Regístrate aquí
+                    </a>
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -638,10 +638,8 @@ body {
 
 }
 
-/* ==================================================
+/* 
    19. PANTALLA DE PREGUNTAS
-   ================================================== */
-
 /* Tarjeta principal de la evaluación */
 
 .panel-preguntas {
@@ -795,6 +793,377 @@ button:disabled {
     .temporizador {
         font-size: 16px;
         padding: 10px;
+    }
+}
+
+/* ==================================================
+   23. PANTALLA DE RESULTADOS
+   ================================================== */
+
+/* Contenedores principales */
+
+.panel-resultados {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+
+    box-shadow: 0 4px 18px #10294b12;
+}
+
+.panel-resultados h2 {
+    color: var(--azul);
+}
+
+/* ==================================================
+   24. TARJETAS DE RESUMEN
+   ================================================== */
+
+/* Tres columnas para los datos generales */
+
+.resumen-resultados {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+/* Cada tarjeta muestra un indicador */
+
+.resultado-dato {
+    text-align: center;
+    background: #f5f7fb;
+    padding: 25px 15px;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+/* Números principales */
+
+.resultado-valor {
+    display: block;
+    color: var(--azul);
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.resultado-dato p {
+    color: #66788c;
+    margin-bottom: 0;
+}
+
+/* Color verde para respuestas correctas */
+
+.resultado-valor.correcto {
+    color: #168568;
+}
+
+/* Color rojo suave para respuestas incorrectas */
+
+.resultado-valor.incorrecto {
+    color: #b45353;
+}
+
+/* ==================================================
+   25. RESULTADOS POR TEMA
+   ================================================== */
+
+.resultado-tema {
+    margin-top: 28px;
+}
+
+/* Nombre del tema a la izquierda,
+   porcentaje a la derecha */
+
+.resultado-tema-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.resultado-tema-encabezado h3 {
+    color: var(--azul);
+    font-size: 16px;
+    margin: 0;
+}
+
+.resultado-tema-encabezado strong {
+    color: var(--azul);
+    font-size: 16px;
+}
+
+/*
+   Reutilizamos .barra-progreso y .progreso-relleno
+   que creamos para las evaluaciones.
+
+   Solo cambiamos el color cuando un tema
+   necesita reforzamiento.
+*/
+
+.progreso-refuerzo {
+    background: var(--dorado);
+}
+
+/* ==================================================
+   26. LISTA DE REFUERZOS
+   ================================================== */
+
+.lista-refuerzos {
+    padding-left: 25px;
+    line-height: 1.9;
+}
+
+.lista-refuerzos li {
+    margin-bottom: 8px;
+}
+
+.lista-refuerzos li::marker {
+    color: var(--dorado-oscuro);
+}
+
+/* ==================================================
+   27. ADAPTACIÓN A CELULARES
+   ================================================== */
+
+@media (max-width: 650px) {
+
+    .panel-resultados {
+        padding: 20px;
+    }
+
+    .resumen-resultados {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .resultado-valor {
+        font-size: 36px;
+    }
+}
+
+/* ==================================================
+   28. PÁGINA DE RECURSOS ACADÉMICOS
+   ================================================== */
+
+/* Contenedores de las secciones */
+
+.panel-recursos {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+
+    box-shadow: 0 4px 18px #10294b12;
+}
+
+.panel-recursos h2 {
+    color: var(--azul);
+}
+
+.panel-recursos > p {
+    color: #66788c;
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   29. AVISO PARA EL ESTUDIANTE
+   ================================================== */
+
+.aviso-recursos {
+    background: #F8F3E7;
+    border-left: 4px solid var(--dorado);
+
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.aviso-recursos strong {
+    color: var(--azul);
+}
+
+.aviso-recursos p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+
+
+/* ==========================================
+   FILTROS DE RECURSOS ACADÉMICOS
+   ========================================== */
+
+/* Contenedor que organiza los botones */
+
+.filtros-recursos {
+    display: flex;
+
+    /* Permite varias filas si falta espacio */
+    flex-wrap: wrap;
+
+    /* Separación horizontal y vertical */
+    gap: 12px;
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Diseño individual de cada filtro */
+
+.filtros-recursos .filtro-recurso {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    background-color: #F5F7FB;
+    color: #10294B;
+
+    border: 1px solid #dce3ec;
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+/* Efecto cuando pasamos el mouse */
+
+.filtros-recursos .filtro-recurso:hover {
+    background-color: #F8F3E7;
+    border-color: #C9A34A;
+    transform: translateY(-2px);
+}
+
+/* Tema seleccionado */
+
+.filtros-recursos .filtro-recurso.filtro-activo {
+    background-color: #10294B;
+    color: white;
+    border-color: #10294B;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+
+    .filtros-recursos {
+        gap: 8px;
+    }
+
+    .filtros-recursos .filtro-recurso {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+}
+
+
+
+/* ==================================================
+   31. DISTRIBUCIÓN DE LOS MATERIALES
+   ================================================== */
+
+.cuadricula-recursos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+
+    gap: 20px;
+    margin-top: 25px;
+}
+
+
+/* ==================================================
+   32. TARJETAS DE RECURSOS
+   ================================================== */
+
+.tarjeta-recurso {
+    background: #fff;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition:
+        transform 0.2s,
+        border-color 0.2s;
+}
+
+.tarjeta-recurso:hover {
+    transform: translateY(-4px);
+    border-color: var(--dorado);
+}
+
+.recurso-icono {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.recurso-tipo {
+    display: inline-block;
+
+    background: #F8F3E7;
+    color: var(--dorado-oscuro);
+
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tarjeta-recurso h3 {
+    color: var(--azul);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-recurso p {
+    color: #66788c;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Separación sobre el botón */
+
+.tarjeta-recurso .boton {
+    margin-top: 15px;
+}
+
+
+/* ==================================================
+   33. ADAPTACIÓN A PANTALLAS PEQUEÑAS
+   ================================================== */
+
+@media (max-width: 650px) {
+
+    .panel-recursos {
+        padding: 20px;
+    }
+
+    .cuadricula-recursos {
+        grid-template-columns: 1fr;
+    }
+
+    .filtro-recurso {
+        font-size: 13px;
+        padding: 9px 13px;
     }
 }
 

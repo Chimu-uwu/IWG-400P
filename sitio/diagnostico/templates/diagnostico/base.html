@@ -8,7 +8,7 @@
 
     <title>{% block titulo %}Diagnóstico USM{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'diagnostico/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'diagnostico/css/estilos.css' %}?v=2">
 </head>
 <body>
 
@@ -31,9 +31,16 @@
                     Evaluaciones
                 </a>
 
-                <span>Resultados</span>
-                <span>Recursos</span>
-
+                
+                <a href="{% url 'resultados' %}"
+                class="{% if request.resolver_match.url_name == 'resultados' %}activo{% endif %}">
+                    Resultados
+                </a>
+                
+                <a href="{% url 'biblioteca' %}"
+                class="{% if request.resolver_match.url_name == 'biblioteca' %}activo{% endif %}">
+                    Recursos
+                </a>
             </nav>
 
         </aside>

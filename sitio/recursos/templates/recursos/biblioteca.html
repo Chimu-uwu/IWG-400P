@@ -1,0 +1,163 @@
+
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}
+Recursos Académicos | USM
+{% endblock %}
+
+{% block contenido %}
+
+<!-- ENCABEZADO -->
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        BIBLIOTECA DE APRENDIZAJE
+    </p>
+
+    <h1>Recursos Académicos</h1>
+
+    <p>
+        Encuentra herramientas y materiales
+        para reforzar tus conocimientos matemáticos.
+    </p>
+
+</section>
+
+
+<!-- PRESENTACIÓN -->
+
+<section class="panel-recursos">
+
+    <h2>Aprende a tu ritmo</h2>
+
+    <p>
+        Explora recursos organizados por tema.
+        Puedes consultar explicaciones, practicar
+        ejercicios y utilizar herramientas interactivas.
+    </p>
+
+    <div class="aviso-recursos">
+        <strong>Consejo de estudio</strong>
+
+        <p>
+            Si identificaste dificultades en tu
+            diagnóstico, comienza revisando esos temas.
+            Después practica con ejercicios similares.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- FILTROS -->
+
+<section class="panel-recursos">
+
+    <h2>Explorar por tema</h2>
+
+    <p>
+        Selecciona el contenido que deseas reforzar.
+    </p>
+
+    
+    <nav class="filtros-recursos"
+        aria-label="Filtrar recursos por tema">
+            {% for codigo, nombre in temas.items %}
+
+            <a
+                href="?tema={{ codigo }}"
+                class="filtro-recurso
+                    {% if tema_actual == codigo %}
+                        filtro-activo
+                    {% endif %}">
+
+                {{ nombre }}
+
+            </a>
+
+        {% endfor %}
+
+    </nav>
+
+</section>
+
+
+<!-- TARJETAS DE RECURSOS -->
+
+<section class="panel-recursos">
+
+    <h2>Materiales disponibles</h2>
+
+    <p>
+        Mostrando {{ cantidad }} recurso(s).
+    </p>
+
+    <div class="cuadricula-recursos">
+
+        {% for recurso in recursos %}
+
+            <article class="tarjeta-recurso">
+
+                <div class="recurso-icono">
+                    📚
+                </div>
+
+                <span class="recurso-tipo">
+                    {{ recurso.tipo }}
+                </span>
+
+                <h3>{{ recurso.titulo }}</h3>
+
+                <p>
+                    {{ recurso.descripcion }}
+                </p>
+
+                <a
+                    href="{{ recurso.url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="boton">
+
+                    Abrir recurso ↗
+
+                </a>
+
+            </article>
+
+        {% empty %}
+
+            <p>
+                No encontramos materiales
+                para el tema seleccionado.
+            </p>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!-- VOLVER -->
+
+<section class="panel-recursos">
+
+    <h2>¿Quieres revisar tu rendimiento?</h2>
+
+    <p>
+        Puedes consultar los resultados de tu
+        diagnóstico para identificar los
+        contenidos que necesitas reforzar.
+    </p>
+
+    <a href="{% url 'resultados' %}"
+       class="boton-secundario">
+
+        Ver resultados →
+
+    </a>
+
+</section>
+
+{% endblock %}

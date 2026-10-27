@@ -15,5 +15,9 @@ urlpatterns = [
     
     path('preguntas/<str:asignatura>/',views.vista_preguntas,name='preguntas'),
 
+    
+    path('resultados/',views.vista_resultados, name='resultados'),
+
+
 
 ]

@@ -1,0 +1,338 @@
+
+/* ==========================================
+   1. COLORES PRINCIPALES
+   ========================================== */
+
+:root {
+    --azul: #10294B;
+    --dorado: #C9A34A;
+    --texto: #26364A;
+    --gris: #66788c;
+    --borde: #dce3ec;
+}
+
+/* ==========================================
+   2. CONFIGURACIÓN GENERAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    background: #f5f7fb;
+}
+
+/* ==========================================
+   3. DISTRIBUCIÓN EN DOS COLUMNAS
+   ========================================== */
+
+.contenedor-login {
+    display: grid;
+
+    /* 45% para presentación y 55% para formulario */
+    grid-template-columns: 45% 55%;
+
+    min-height: 100vh;
+}
+
+/* ==========================================
+   4. PANEL AZUL DE PRESENTACIÓN
+   ========================================== */
+
+.panel-presentacion {
+    background: var(--azul);
+    color: white;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Marca USM */
+
+.marca h1 {
+    margin: 0;
+    font-size: 58px;
+    color: var(--dorado);
+}
+
+.marca p {
+    margin-top: 8px;
+    color: #dce7f3;
+    font-size: 17px;
+}
+
+/* Mensaje principal */
+
+.mensaje-presentacion {
+    position: relative;
+    z-index: 1;
+}
+
+.etiqueta {
+    color: var(--dorado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.mensaje-presentacion h2 {
+    font-size: clamp(30px, 3.5vw, 50px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.mensaje-presentacion p {
+    color: #dce7f3;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 440px;
+}
+
+/* Símbolos matemáticos decorativos */
+
+.decoracion {
+    font-size: 48px;
+    color: var(--dorado);
+    opacity: 0.4;
+    margin-top: 35px;
+    letter-spacing: 12px;
+}
+
+.pie-presentacion {
+    color: #b5c8dd;
+    font-size: 13px;
+}
+
+/* ==========================================
+   5. PANEL DERECHO
+   ========================================== */
+
+.panel-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 30px;
+    background: white;
+}
+
+/* Limita el ancho del formulario */
+
+.formulario-contenido {
+    width: 100%;
+    max-width: 430px;
+}
+
+.etiqueta-formulario {
+    color: #927020;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.formulario-contenido h2 {
+    font-size: 36px;
+    color: var(--azul);
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    color: var(--gris);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* ==========================================
+   6. CAMPOS DEL FORMULARIO
+   ========================================== */
+
+.grupo-campo {
+    margin-bottom: 23px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.grupo-campo input {
+    display: block;
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid var(--borde);
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-family: inherit;
+    background: #fbfcfe;
+
+    transition: border-color 0.2s;
+}
+
+/* Resalta el campo seleccionado */
+
+.grupo-campo input:focus {
+    outline: 2px solid rgba(201, 163, 74, 0.25);
+    border-color: var(--dorado);
+}
+
+/* ==========================================
+   7. BOTONES Y ENLACES
+   ========================================== */
+
+.recuperar {
+    text-align: right;
+    font-size: 14px;
+    color: var(--gris);
+}
+
+.texto-pendiente {
+    color: #927020;
+    font-weight: bold;
+}
+
+.boton-ingresar {
+    width: 100%;
+    margin-top: 22px;
+    padding: 16px;
+
+    background: var(--azul);
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: background 0.2s;
+}
+
+.boton-ingresar:not(:disabled) {
+    cursor: pointer;
+}
+
+.boton-ingresar:not(:disabled):hover {
+    background: #24476e;
+}
+
+.boton-ingresar:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.aviso-prototipo {
+    color: var(--gris);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.enlace-registro {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.enlace-registro a {
+    color: #927020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace-registro a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   8. ADAPTACIÓN A CELULARES
+   ========================================== */
+
+@media (max-width: 850px) {
+
+    .contenedor-login {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-presentacion {
+        padding: 30px;
+        min-height: 260px;
+    }
+
+    .marca h1 {
+        font-size: 42px;
+    }
+
+    .mensaje-presentacion h2 {
+        font-size: 28px;
+    }
+
+    .mensaje-presentacion p,
+    .decoracion,
+    .pie-presentacion {
+        display: none;
+    }
+
+    .panel-formulario {
+        padding: 40px 25px;
+    }
+
+    .formulario-contenido h2 {
+        font-size: 30px;
+    }
+}
+
+/* ==========================================
+   9. ELEMENTOS DEL FORMULARIO DE REGISTRO
+   ========================================== */
+
+/*
+   Texto de ayuda debajo de un campo.
+   Por ejemplo, la recomendación para
+   crear una contraseña segura.
+*/
+
+.ayuda-campo {
+    margin-top: 7px;
+    margin-bottom: 0;
+
+    font-size: 12px;
+    color: var(--gris);
+
+    line-height: 1.5;
+}
+
+/*
+   Mejoramos el aspecto de los enlaces
+   cuando se navega con el teclado.
+*/
+
+.enlace-registro a:focus-visible {
+    outline: 2px solid var(--dorado);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+/*
+   Evita que los campos demasiado largos
+   superen el ancho del formulario.
+*/
+
+.formulario-contenido input {
+    max-width: 100%;
+}

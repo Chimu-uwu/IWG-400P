@@ -1,0 +1,147 @@
+
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}
+Resultados | Diagnóstico USM
+{% endblock %}
+
+{% block contenido %}
+
+<!-- ENCABEZADO -->
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">RESULTADOS DEL DIAGNÓSTICO</p>
+
+    <h1>{{ asignatura }}</h1>
+
+    <p>
+        Descubre tus fortalezas y los contenidos
+        que necesitas reforzar.
+    </p>
+
+    <p class="nota">
+        Resultados de demostración.
+    </p>
+
+</section>
+
+
+<!-- RESUMEN GENERAL -->
+
+<section class="panel-resultados">
+
+    <h2>Tu rendimiento general</h2>
+
+    <div class="resumen-resultados">
+
+        <article class="resultado-dato">
+            <span class="resultado-valor">
+                {{ porcentaje }}%
+            </span>
+            <p>Rendimiento</p>
+        </article>
+
+        <article class="resultado-dato">
+            <span class="resultado-valor correcto">
+                {{ correctas }}
+            </span>
+            <p>Respuestas correctas</p>
+        </article>
+
+        <article class="resultado-dato">
+            <span class="resultado-valor incorrecto">
+                {{ incorrectas }}
+            </span>
+            <p>Respuestas incorrectas</p>
+        </article>
+
+    </div>
+
+    <p class="nota">
+        Obtuviste {{ correctas }} de {{ total }}
+        respuestas correctas.
+    </p>
+
+</section>
+
+
+<!-- RENDIMIENTO POR TEMA -->
+
+<section class="panel-resultados">
+
+    <h2>Rendimiento por tema</h2>
+
+    <p>
+        Cada barra muestra el porcentaje de
+        respuestas correctas en un área.
+    </p>
+
+    {% for tema in temas %}
+
+        <div class="resultado-tema">
+
+            <div class="resultado-tema-encabezado">
+                <h3>{{ tema.nombre }}</h3>
+                <strong>{{ tema.porcentaje }}%</strong>
+            </div>
+
+            <div class="barra-progreso">
+
+                <div class="progreso-relleno
+                    {% if tema.porcentaje <= 50 %}progreso-refuerzo{% endif %}"
+                    style="width: {{ tema.porcentaje }}%;">
+                </div>
+
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</section>
+
+
+<!-- RECOMENDACIONES -->
+
+<section class="panel-resultados">
+
+    <h2>Contenidos que puedes reforzar</h2>
+
+    {% if temas_reforzar %}
+
+        <p>
+            Según tus respuestas, recomendamos
+            revisar los siguientes contenidos:
+        </p>
+
+        <ul class="lista-refuerzos">
+
+            {% for tema in temas_reforzar %}
+                <li>{{ tema }}</li>
+            {% endfor %}
+
+        </ul>
+
+    {% else %}
+
+        <p>
+            ¡Buen trabajo! No se identificaron temas
+            bajo el umbral de refuerzo establecido.
+        </p>
+
+    {% endif %}
+
+    <p class="nota">
+        Más adelante podrás acceder aquí a guías,
+        videos y otros materiales recomendados.
+    </p>
+
+    <a href="{% url 'evaluacion' %}"
+       class="boton">
+        Volver a evaluaciones
+    </a>
+
+</section>
+
+{% endblock %}
