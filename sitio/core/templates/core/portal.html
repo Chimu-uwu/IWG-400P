@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cápsula de Materia</title>
+</head>
+<body>
+    <h1>Tus Recursos de Nivelación</h1>
+    
+    <ul>
+        {% for recurso in recursos %}
+            <li style="margin-bottom: 15px;">
+                <strong>{{ recurso.titulo }}</strong> (Materia: {{ recurso.materia }})<br>
+                Tipo: {{ recurso.get_tipo_display }} | Nivel de dificultad: {{ recurso.nivel_dificultad }}<br>
+                
+                {% if recurso.enlace %}
+                    <a href="{{ recurso.enlace }}" target="_blank">Abrir material</a>
+                {% else %}
+                    <span>Enlace no disponible</span>
+                {% endif %}
+            </li>
+        {% empty %}
+            <li>No hay recursos guardados en este nivel todavía.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

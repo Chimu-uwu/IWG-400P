@@ -1,5 +1,5 @@
 """
-WSGI config for sitio project.
+WSGI config for web__proyecto project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

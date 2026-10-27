@@ -1,5 +1,5 @@
 """
-ASGI config for sitio project.
+ASGI config for web__proyecto project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

@@ -1,5 +1,5 @@
 """
-URL configuration for sitio project.
+URL configuration for web__proyecto project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.1/topics/http/urls/
@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from core import views  # Importamos las vistas de tu app core
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.inicio, name='inicio'),
+    path('portal/', views.portal_materia, name='portal'),# Ruta vacía para la página de inicio
 ]
