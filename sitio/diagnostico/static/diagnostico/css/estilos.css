@@ -117,10 +117,6 @@ body {
     color: var(--dorado);
 }
 
-/*
-   Las opciones que todavía no funcionan
-   aparecen más transparentes.
-*/
 
 .menu-lateral nav span {
     opacity: 0.5;
@@ -134,13 +130,6 @@ body {
     min-width: 0;
     padding: 30px;
 
-    /*
-       Usamos dos capas:
-       1. Una capa blanca semitransparente.
-       2. La imagen con dibujos de ciencias.
-
-       0.78 equivale a un 78% de opacidad.
-    */
 
     background-image:
         linear-gradient(
@@ -211,12 +200,6 @@ body {
 
 /* Distribucion tarjetas*/
 
-/*
-   CSS Grid organiza elementos en columnas.
-
-   auto-fit ajusta automáticamente el número
-   de columnas según el espacio disponible.
-*/
 
 .tarjetas {
     display: grid;
@@ -244,10 +227,6 @@ body {
     transition: transform 0.2s, border-color 0.2s;
 }
 
-/*
-   translateY(-5px) mueve la tarjeta
-   cinco píxeles hacia arriba.
-*/
 
 .tarjeta:hover {
     transform: translateY(-5px);
@@ -393,13 +372,12 @@ body {
 }
 
 
-/* 
-    DISEÑO ADAPTABLE A PANTALLAS PEQUEÑAS( telefonos, etc)
+
 
 
 /*
    @media aplica estos cambios solamente cuando
-   la pantalla tiene un ancho de 850px o menos.
+   la pantalla tiene un ancho de 850px o menos basicamente telefonos o tablets.
 */
 
 @media (max-width: 850px) {
@@ -675,9 +653,7 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
-/* ==================================================
-   20. BARRA DE PROGRESO
-   ================================================== */
+/* 20. BARRA DE PROGRESO*/
 
 .barra-progreso {
     width: 100%;
@@ -696,9 +672,7 @@ body {
     transition: width 0.3s ease;
 }
 
-/* ==================================================
-   21. ENUNCIADO Y ALTERNATIVAS
-   ================================================== */
+/* 21. ENUNCIADO Y ALTERNATIVAS*/
 
 .contenido-pregunta {
     padding: 30px 0;
@@ -749,9 +723,7 @@ body {
     border-color: var(--azul);
 }
 
-/* ==================================================
-   22. BOTONES Y MENSAJE FINAL
-   ================================================== */
+/* 22. BOTONES Y MENSAJE FINAL */
 
 button.boton,
 button.boton-secundario {
@@ -796,9 +768,7 @@ button:disabled {
     }
 }
 
-/* ==================================================
-   23. PANTALLA DE RESULTADOS
-   ================================================== */
+/* 23. PANTALLA DE RESULTADOS*/
 
 /* Contenedores principales */
 
@@ -817,9 +787,7 @@ button:disabled {
     color: var(--azul);
 }
 
-/* ==================================================
-   24. TARJETAS DE RESUMEN
-   ================================================== */
+/* 24. TARJETAS DE RESUMEN*/
 
 /* Tres columnas para los datos generales */
 
@@ -866,9 +834,7 @@ button:disabled {
     color: #b45353;
 }
 
-/* ==================================================
-   25. RESULTADOS POR TEMA
-   ================================================== */
+/* 25. RESULTADOS POR TEMA */
 
 .resultado-tema {
     margin-top: 28px;
@@ -907,9 +873,7 @@ button:disabled {
     background: var(--dorado);
 }
 
-/* ==================================================
-   26. LISTA DE REFUERZOS
-   ================================================== */
+/* 26. LISTA DE REFUERZOS */
 
 .lista-refuerzos {
     padding-left: 25px;
@@ -924,9 +888,7 @@ button:disabled {
     color: var(--dorado-oscuro);
 }
 
-/* ==================================================
-   27. ADAPTACIÓN A CELULARES
-   ================================================== */
+/* 27. ADAPTACIÓN A CELULARES */
 
 @media (max-width: 650px) {
 
@@ -944,9 +906,7 @@ button:disabled {
     }
 }
 
-/* ==================================================
-   28. PÁGINA DE RECURSOS ACADÉMICOS
-   ================================================== */
+/* 28. PÁGINA DE RECURSOS ACADÉMICOS */
 
 /* Contenedores de las secciones */
 
@@ -971,9 +931,7 @@ button:disabled {
 }
 
 
-/* ==================================================
-   29. AVISO PARA EL ESTUDIANTE
-   ================================================== */
+/* 29. AVISO PARA EL ESTUDIANTE */
 
 .aviso-recursos {
     background: #F8F3E7;
@@ -995,9 +953,7 @@ button:disabled {
 
 
 
-/* ==========================================
-   FILTROS DE RECURSOS ACADÉMICOS
-   ========================================== */
+/* FILTROS DE RECURSOS ACADÉMICO */
 
 /* Contenedor que organiza los botones */
 
@@ -1069,9 +1025,7 @@ button:disabled {
 
 
 
-/* ==================================================
-   31. DISTRIBUCIÓN DE LOS MATERIALES
-   ================================================== */
+/* 31. DISTRIBUCIÓN DE LOS MATERIALES*/
 
 .cuadricula-recursos {
     display: grid;
@@ -1084,9 +1038,7 @@ button:disabled {
 }
 
 
-/* ==================================================
-   32. TARJETAS DE RECURSOS
-   ================================================== */
+/* 32. TARJETAS DE RECURSOS */
 
 .tarjeta-recurso {
     background: #fff;
@@ -1147,9 +1099,7 @@ button:disabled {
 }
 
 
-/* ==================================================
-   33. ADAPTACIÓN A PANTALLAS PEQUEÑAS
-   ================================================== */
+/* telefonos denuevo */
 
 @media (max-width: 650px) {
 
@@ -1168,9 +1118,7 @@ button:disabled {
 }
 
 
-/* ==========================================
-   BOTÓN CERRAR SESIÓN
-   ========================================== */
+/*  BOTÓN CERRAR SESIÓN*/
 
 /* Contenedor del formulario */
 .menu-lateral .formulario-logout {

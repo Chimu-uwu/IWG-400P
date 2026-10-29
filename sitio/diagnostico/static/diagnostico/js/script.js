@@ -1,7 +1,7 @@
 
-// ===========================================
+
 // 1. BUSCAR LOS ELEMENTOS DEL HTML
-// ===========================================
+
 
 const contenedor = document.getElementById(
     "evaluacion-interactiva"
@@ -14,9 +14,9 @@ if (contenedor) {
     // Leemos la asignatura enviada por Django.
     const asignatura = contenedor.dataset.asignatura;
 
-    // ===========================================
+    
     // 2. PREGUNTAS DE DEMOSTRACIÓN
-    // ===========================================
+    
 
     const preguntasMatematicas = [
         {
@@ -38,23 +38,22 @@ if (contenedor) {
         ? preguntasFisica
         : preguntasMatematicas;
 
-    // ===========================================
-    // 3. VARIABLES DE CONTROL
-    // ===========================================
+    
+
 
     let preguntaActual = 0;
 
     // Guardaremos aquí las respuestas seleccionadas.
     const respuestas = Array(preguntas.length).fill(null);
 
-    // Tiempo de demostración: 40 minutos.
+    // Tiempo de 40 minutos.
     let tiempoRestante = 40 * 60;
 
     let evaluacionFinalizada = false;
 
-    // ===========================================
-    // 4. REFERENCIAS A ELEMENTOS VISUALES
-    // ===========================================
+
+    // 4. REFERENCIAS 
+    
 
     const numeroPregunta = document.getElementById(
         "numero-pregunta"
@@ -88,10 +87,9 @@ if (contenedor) {
         "mensaje-final"
     );
 
-    // ===========================================
+    
     // 5. MOSTRAR UNA PREGUNTA
-    // ===========================================
-
+    
     function mostrarPregunta() {
 
         const pregunta = preguntas[preguntaActual];
@@ -101,22 +99,22 @@ if (contenedor) {
 
         enunciado.textContent = pregunta.enunciado;
 
-        // Limpiamos las alternativas anteriores.
+        // Limpia la alternativa anterior
         alternativas.innerHTML = "";
 
         pregunta.alternativas.forEach((texto, indice) => {
 
-            // Creamos una etiqueta HTML.
+            //crea una etiqueta html
             const etiqueta = document.createElement("label");
             etiqueta.className = "alternativa";
 
-            // Creamos un botón de selección.
+            // Crea un botón de selección.
             const radio = document.createElement("input");
             radio.type = "radio";
             radio.name = "respuesta";
             radio.value = indice;
 
-            // Comprobamos si ya fue seleccionada.
+            // Comprueba si ya fue seleccionada.
             const seleccionada =
                 respuestas[preguntaActual] === indice;
 
@@ -146,25 +144,24 @@ if (contenedor) {
             alternativas.appendChild(etiqueta);
         });
 
-        // Calculamos el avance de navegación.
+        // Calcula el avance de navegación.
         const porcentaje =
             ((preguntaActual + 1) / preguntas.length) * 100;
 
         progreso.style.width = `${porcentaje}%`;
 
-        // Desactivamos Anterior en la primera pregunta.
+        // Desactiva la el boton de volver en la primera pregunta.
         btnAnterior.disabled = preguntaActual === 0;
 
-        // Cambiamos el texto del último botón.
+        // Cambia el texto del último botón.
         btnSiguiente.textContent =
             preguntaActual === preguntas.length - 1
                 ? "Finalizar demostración"
                 : "Siguiente →";
     }
 
-    // ===========================================
+    
     // 6. NAVEGACIÓN ENTRE PREGUNTAS
-    // ===========================================
 
     btnAnterior.addEventListener("click", () => {
         if (preguntaActual > 0) {
@@ -183,9 +180,9 @@ if (contenedor) {
         }
     });
 
-    // ===========================================
+    
     // 7. TEMPORIZADOR
-    // ===========================================
+
 
     function actualizarTemporizador() {
 
@@ -213,9 +210,9 @@ if (contenedor) {
 
     }, 1000);
 
-    // ===========================================
+
     // 8. FINALIZAR LA DEMOSTRACIÓN
-    // ===========================================
+
 
     function finalizarEvaluacion() {
 
@@ -238,9 +235,8 @@ if (contenedor) {
         mensajeFinal.hidden = false;
     }
 
-    // ===========================================
     // 9. INICIAR LA INTERFAZ
-    // ===========================================
+    
 
     actualizarTemporizador();
     mostrarPregunta();
