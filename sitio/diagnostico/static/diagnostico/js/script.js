@@ -31,37 +31,7 @@ if (contenedor) {
             enunciado: "¿Cuánto es 2 elevado a 4?",
             alternativas: ["8", "12", "16", "32"]
         }
-    ];
-
-    const preguntasFisica = [
-        {
-            enunciado: "¿Cuál es la unidad de fuerza en el Sistema Internacional?",
-            alternativas: [
-                "Joule",
-                "Newton",
-                "Watt",
-                "Pascal"
-            ]
-        },
-        {
-            enunciado: "Un objeto recorre 100 metros en 20 segundos. ¿Cuál es su rapidez media?",
-            alternativas: [
-                "2 m/s",
-                "5 m/s",
-                "10 m/s",
-                "20 m/s"
-            ]
-        },
-        {
-            enunciado: "¿Cuál de las siguientes magnitudes es vectorial?",
-            alternativas: [
-                "Masa",
-                "Temperatura",
-                "Velocidad",
-                "Tiempo"
-            ]
-        }
-    ];
+    ]
 
     // Seleccionamos las preguntas correspondientes.
     const preguntas = asignatura === "fisica"

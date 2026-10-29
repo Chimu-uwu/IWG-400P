@@ -1167,3 +1167,43 @@ button:disabled {
     }
 }
 
+
+/* ==========================================
+   BOTÓN CERRAR SESIÓN
+   ========================================== */
+
+/* Contenedor del formulario */
+.menu-lateral .formulario-logout {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del botón */
+.menu-lateral .boton-logout {
+    display: block;
+    width: 100%;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    
+    color:#F8F3E7;
+    font: inherit;
+    text-align: left;
+
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.menu-lateral nav a,
+.menu-lateral nav .boton-logout {
+    padding: 15px 20px;
+    color: white;
+    border-radius: 8px;
+}
+/* Efecto al pasar el mouse */
+.menu-lateral .boton-logout:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

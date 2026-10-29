@@ -1,6 +1,7 @@
 
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -76,8 +77,14 @@
                     con tu aprendizaje.
                 </p>
 
-                <form>
+                <form method="POST">
+                    {% csrf_token %}
 
+                    {% if form.non_field_errors %}
+                        <div class="errores_formulario">
+                            {{ form.non_field_errors }}
+                        </div>
+                    {% endif %}
                     <!-- CORREO ELECTRÓNICO -->
 
                     <div class="grupo-campo">
@@ -89,10 +96,14 @@
                         <input
                             type="email"
                             id="correo"
-                            name="correo"
+                            name="username"
                             placeholder="ejemplo@correo.com"
+                            value="{{ form.username.value|default_if_none:'' }}"
                             autocomplete="email"
+                            maxlength="150"
                             required>
+
+                        {{ form.username.errors }}
 
                     </div>
 
@@ -108,10 +119,12 @@
                         <input
                             type="password"
                             id="contrasena"
-                            name="contrasena"
+                            name="password"
                             placeholder="Ingresa tu contraseña"
                             autocomplete="current-password"
                             required>
+                        
+                        {{ form.password.errors }}
 
                     </div>
 
@@ -125,20 +138,11 @@
                         </span>
                     </p>
 
-
                     <!-- BOTÓN DE ACCESO -->
 
-                    <button
-                        type="button"
-                        class="boton-ingresar"
-                        disabled>
+                    <button type="submit" class="boton-ingresar">
                         Iniciar sesión
                     </button>
-
-                    <p class="aviso-prototipo">
-                        El inicio de sesión estará disponible
-                        cuando se integre la autenticación.
-                    </p>
 
                 </form>
 

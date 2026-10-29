@@ -129,3 +129,9 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+# pagina para iniciar la sesion
+LOGIN_URL = 'login'
+#pagina que te redirige despues de iniciar
+LOGIN_REDIRECT_URL = 'inicio'
+#pagina que te envia al cerrar
+LOGOUT_REDIRECT_URL = 'login'

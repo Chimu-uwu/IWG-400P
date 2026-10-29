@@ -79,23 +79,31 @@
 
                 <!-- FORMULARIO DE REGISTRO -->
 
-                <form id="formulario-registro">
+                <form method="POST" id="formulario-registro">
+                    {% csrf_token %}
+
+                    {% if form.non_field_errors %}
+                        <div class="errores-formulario">
+                            {{ form.non_field_errors }}
+                        </div>
+                    {% endif %}
+
 
                     <!-- NOMBRE COMPLETO -->
 
                     <div class="grupo-campo">
 
-                        <label for="nombre">
-                            Nombre completo
-                        </label>
+                        <label for="nombre">Nombre completo</label>
 
                         <input
                             type="text"
                             id="nombre"
                             name="nombre"
                             placeholder="Ej. Benito Camelo/ Alma Maria rico"
+                            value="{{ form.nombre.value|default_if_none:'' }}"
                             autocomplete="name"
                             required>
+                        {{ form.nombre.errors }}
 
                     </div>
 
@@ -104,17 +112,18 @@
 
                     <div class="grupo-campo">
 
-                        <label for="correo">
-                            Correo electrónico
-                        </label>
+                        <label for="correo">Correo electrónico</label>
 
                         <input
                             type="email"
                             id="correo"
-                            name="correo"
+                            name="username"
                             placeholder="ejemplo@correo.com"
+                            value="{{ form.nombre.value|default_if_none:'' }}"
                             autocomplete="email"
+                            maxlength="150"
                             required>
+                        {{ form.username.errors }}
 
                     </div>
 
@@ -123,18 +132,17 @@
 
                     <div class="grupo-campo">
 
-                        <label for="contrasena">
-                            Contraseña
-                        </label>
+                        <label for="contrasena">Contraseña</label>
 
                         <input
                             type="password"
                             id="contrasena"
-                            name="contrasena"
+                            name="password1"
                             placeholder="Crea una contraseña"
                             autocomplete="new-password"
-                            minlength="8"
                             required>
+
+                        {{ form.password1.errors }}
 
                         <p class="ayuda-campo">
                             Utiliza una contraseña segura.
@@ -154,29 +162,21 @@
                         <input
                             type="password"
                             id="confirmar"
-                            name="confirmar"
+                            name="password2"
                             placeholder="Repite tu contraseña"
                             autocomplete="new-password"
-                            minlength="8"
                             required>
+                        
+                        {{ form.password2.errors }}
 
                     </div>
 
 
                     <!-- BOTÓN DE REGISTRO -->
 
-                    <button
-                        type="button"
-                        class="boton-ingresar"
-                        disabled>
+                    <button type="submit" class="boton-ingresar">
                         Crear mi cuenta
                     </button>
-
-                    <p class="aviso-prototipo">
-                        El registro estará disponible
-                        cuando se integre el sistema
-                        de autenticación de Django.
-                    </p>
 
                 </form>
 

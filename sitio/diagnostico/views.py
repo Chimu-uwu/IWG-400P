@@ -1,13 +1,16 @@
 
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def vista_inicio(request):
     return render(request, 'diagnostico/inicio.html')
 
+@login_required
 def vista_diagnostico(request):
     return render(request, 'diagnostico/evaluacion.html')
 
-
+@login_required
 def vista_instrucciones(request, asignatura):
 
     # Diccionario con las asignaturas disponibles
@@ -33,7 +36,7 @@ def vista_instrucciones(request, asignatura):
         contexto
     )
 
-
+@login_required
 def vista_preguntas(request, asignatura):
 
     # Asignaturas disponibles
@@ -58,7 +61,7 @@ def vista_preguntas(request, asignatura):
         contexto
     )
 
-
+@login_required
 def vista_resultados(request):
 
     # =====================================

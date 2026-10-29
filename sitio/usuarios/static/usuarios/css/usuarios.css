@@ -336,3 +336,40 @@ body {
 .formulario-contenido input {
     max-width: 100%;
 }
+
+/* ==========================================
+   10. ERRORES DE VALIDACIÓN
+   ========================================== */
+
+.errorlist {
+    list-style: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+
+    background: #fff0f0;
+    color: #a52a2a;
+
+    border: 1px solid #f0c7c7;
+    border-radius: 8px;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.errores-formulario {
+    margin-bottom: 20px;
+}
+
+/* Mensajes de error de Django */
+
+.errorlist {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+}
+
+.errorlist li {
+    margin-bottom: 4px;
+}
