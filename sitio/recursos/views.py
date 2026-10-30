@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 
 
@@ -13,6 +12,7 @@ def vista_biblioteca(request):
     # desde los modelos de Django.
 
     recursos = [
+        # --- RECURSOS ORIGINALES ---
         {
             "titulo": "Números y operaciones",
             "tema": "numeros",
@@ -67,6 +67,77 @@ def vista_biblioteca(request):
                 "Precalculo_y_Trigonometria/"
                 "Prec%C3%A1lculo_%28OpenStax%29"
             ),
+        },
+        # --- VIDEOS DE YOUTUBE ---
+        {
+            "titulo": "Video 1: Números y operaciones",
+            "tema": "numeros",
+            "tipo": "Video",
+            "descripcion": "Suma y resta.",
+            "url": "https://www.youtube.com/watch?v=v4h6KZkQ1Q0&list=PLeySRPnY35dF1DoKO_5VyboxzdT4UyyPA",
+        },
+        {
+            "titulo": "Video 2: Números y operaciones",
+            "tema": "numeros",
+            "tipo": "Video",
+            "descripcion": "Suma, resta y multiplicación.",
+            "url": "https://www.youtube.com/watch?v=VvvtknaN0j0&list=PLeySRPnY35dF1DoKO_5VyboxzdT4UyyPA&index=3",
+        },
+        {
+            "titulo": "Video 1: Álgebra",
+            "tema": "algebra",
+            "tipo": "Video",
+            "descripcion": "Término y sus partes.",
+            "url": "https://www.youtube.com/watch?v=a-H0e27KNUk&list=PLeySRPnY35dGSJYCRn7tD1mVatw3MrdIm&index=2",
+        },
+        {
+            "titulo": "Video 2: Álgebra",
+            "tema": "algebra",
+            "tipo": "Video",
+            "descripcion": "Términos semejantes.",
+            "url": "https://www.youtube.com/watch?v=_0vaN7XMUsg&list=PLeySRPnY35dGSJYCRn7tD1mVatw3MrdIm&index=3",
+        },
+        {
+            "titulo": "Video 1: Funciones",
+            "tema": "funciones",
+            "tipo": "Video",
+            "descripcion": "¿Qué es una función?.",
+            "url": "https://www.youtube.com/watch?v=HAeSkQH1C-I&list=PLeySRPnY35dGfEuNGbQmymhiQF4oTUIMb",
+        },
+        {
+            "titulo": "Video 2: Funciones",
+            "tema": "funciones",
+            "tipo": "Video",
+            "descripcion": "Función inyectiva, sobreyectiva y biyectiva.",
+            "url": "https://www.youtube.com/watch?v=xhBWUbY1VrM&list=PLeySRPnY35dGfEuNGbQmymhiQF4oTUIMb&index=2",
+        },
+        {
+            "titulo": "Video 1: Geometría",
+            "tema": "geometria",
+            "tipo": "Video",
+            "descripcion": "Teorema de Pitágoras.",
+            "url": "https://www.youtube.com/watch?v=w6nh99v3r4A&list=PLiWRH3aE37VK5Tauc9rRKCTJUMUQmh5Yi",
+        },
+        {
+            "titulo": "Video 2: Geometría",
+            "tema": "geometria",
+            "tipo": "Video",
+            "descripcion": "Ángulo entre paralelas y secantes.",
+            "url": "https://www.youtube.com/watch?v=5_ky4mWpSA4&list=PLiWRH3aE37VK5Tauc9rRKCTJUMUQmh5Yi&index=3",
+        },
+        {
+            "titulo": "Video 1: Trigonometría",
+            "tema": "trigonometria",
+            "tipo": "Video",
+            "descripcion": "Razones trigonométricas en triángulo rectángulo.",
+            "url": "https://www.youtube.com/watch?v=7pUi5lvLf7c",
+        },
+        {
+            "titulo": "Video 2: Trigonometría",
+            "tema": "trigonometria",
+            "tipo": "Video",
+            "descripcion": "Cateto opuesto, cateto adyacente e hipotenusa.",
+            "url": "https://www.youtube.com/watch?v=FUMlQtJfrHo",
         },
     ]
 
