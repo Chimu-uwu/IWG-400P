@@ -1,0 +1,59 @@
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}Inicio | Diagnóstico USM{% endblock %}
+
+{% block contenido %}
+
+<section class="bienvenida">
+    <p class="etiqueta">PLATAFORMA DE NIVELACIÓN</p>
+    <h1>¡Bienvenido a tu espacio de aprendizaje!</h1>
+    <p>
+        Descubre tus fortalezas, identifica los contenidos
+        que necesitas reforzar y prepárate para tus ramos más dificiles.
+    </p>
+</section>
+
+<section class="seccion">
+    <h2>Evaluaciones diagnósticas</h2>
+    <p>Selecciona el área que deseas evaluar.</p>
+
+    <div class="tarjetas">
+
+        <article class="tarjeta">
+            <div class="icono-asignatura">∑</div>
+            <h3>Matemáticas</h3>
+            <p>Álgebra, funciones, geometría y trigonometría.</p>
+            <a href="{% url 'evaluacion' %}" class="boton">
+                Explorar evaluación →
+            </a>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono-asignatura">⚛</div>
+            <h3>Física</h3>
+            <p>Movimiento, fuerzas, energía y otros conceptos.</p>
+            <span class="proximamente">Próximamente</span>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono-asignatura">⚗</div>
+            <h3>Química</h3>
+            <p>Átomos, enlaces y fundamentos de química.</p>
+            <span class="proximamente">Próximamente</span>
+        </article>
+
+    </div>
+</section>
+
+<section class="seccion">
+    <div class="panel-progreso">
+        <h2>Tu progreso académico</h2>
+        <p>
+            Aquí podrás visualizar las evaluaciones realizadas
+            y los contenidos que necesitas reforzar.
+        </p>
+        <p class="nota">Esta sección estará disponible próximamente.</p>
+    </div>
+</section>
+
+{% endblock %}
