@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',         # modelos y datos (rama Backend-TB)
+    'recursos',     # ruta de estudio
+    'diagnostico',  # interfaz de la evaluación (rama Frontend-MK)
 ]
 
 MIDDLEWARE = [

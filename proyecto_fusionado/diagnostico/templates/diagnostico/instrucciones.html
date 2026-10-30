@@ -1,0 +1,120 @@
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}
+Instrucciones | Diagnóstico USM
+{% endblock %}
+
+{% block contenido %}
+
+<!-- ENCABEZADO DE LA EVALUACIÓN -->
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        ANTES DE COMENZAR
+    </p>
+
+    <h1>Diagnóstico de {{ asignatura }}</h1>
+
+    <p>
+        Lee atentamente las instrucciones antes de
+        comenzar tu evaluación diagnóstica.
+    </p>
+
+</section>
+
+
+<!-- INFORMACIÓN GENERAL -->
+
+<section class="panel-instrucciones">
+
+    <h2>Información de la evaluación</h2>
+
+    <div class="datos-evaluacion">
+
+        <div class="dato">
+            <span class="dato-icono">◷</span>
+            <h3>40 minutos</h3>
+            <p>Tiempo disponible</p>
+        </div>
+
+        <div class="dato">
+            <span class="dato-icono">☷</span>
+            <h3>{{ total_preguntas }} preguntas</h3>
+            <p>Selección múltiple</p>
+        </div>
+
+    </div>
+
+
+    <!-- INSTRUCCIONES -->
+
+    <h2>Instrucciones generales</h2>
+
+    <ol class="lista-instrucciones">
+
+        <li>
+            La evaluación contiene {{ total_preguntas }} preguntas
+            de selección múltiple.
+        </li>
+
+        <li>
+            Cada pregunta presenta cuatro alternativas
+            y solo una es correcta.
+        </li>
+
+        <li>
+            Dispondrás de un máximo de 40 minutos
+            para completar la evaluación.
+        </li>
+
+        <li>
+            Podrás avanzar y retroceder entre
+            las preguntas antes de finalizar.
+        </li>
+
+        <li>
+            Al finalizar, podrás conocer tus resultados
+            y los contenidos que necesitas reforzar.
+        </li>
+
+    </ol>
+
+
+    <!-- MENSAJE INFORMATIVO -->
+
+    <div class="aviso-evaluacion">
+
+        <h3>¿Cuál es el objetivo?</h3>
+
+        <p>
+            Identificar tus fortalezas y vacíos conceptuales
+            para orientar tu proceso de aprendizaje.
+            Esta evaluación no constituye una calificación
+            académica.
+        </p>
+
+    </div>
+
+
+    <!-- BOTONES DE NAVEGACIÓN -->
+
+    <div class="acciones-evaluacion">
+
+        <a href="{% url 'evaluacion' %}"
+           class="boton-secundario">
+            ← Volver
+        </a>
+
+
+        <a href="{% url 'preguntas' codigo_asignatura %}"
+        class="boton">
+            Comenzar evaluación →
+        </a>
+
+
+    </div>
+
+</section>
+
+{% endblock %}

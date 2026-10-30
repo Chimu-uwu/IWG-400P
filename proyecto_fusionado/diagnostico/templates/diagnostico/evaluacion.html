@@ -1,0 +1,214 @@
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}
+Evaluaciones | Diagnóstico USM
+{% endblock %}
+
+{% block contenido %}
+
+<!-- Encabezado principal -->
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        EVALUACIONES DIAGNÓSTICAS
+    </p>
+
+    <h1>Descubre tus conocimientos</h1>
+
+    <p>
+        Selecciona una asignatura y explora los
+        contenidos que podrás evaluar.
+    </p>
+
+</section>
+
+
+<!-- Selección de asignaturas -->
+
+<section class="seccion">
+
+    <h2>Asignaturas disponibles</h2>
+
+    <div class="tarjetas">
+
+        <!-- Matemáticas -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">∑</div>
+
+            <h3>Matemáticas</h3>
+
+            <p>
+                Evalúa tus conocimientos en
+                álgebra, funciones y trigonometría.
+            </p>
+
+            <a href="#matematicas" class="boton">
+                Ver temas →
+            </a>
+            
+            <a href="{% url 'instrucciones' 'matematicas' %}"
+            class="boton boton-dorado">
+                Comenzar diagnóstico →
+            </a>
+
+
+        </article>
+
+
+        <!-- Física -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">⚛</div>
+
+            <h3>Física</h3>
+
+            <p>
+                Revisa conceptos fundamentales
+                de movimiento, fuerza y energía.
+            </p>
+
+            <a href="{% url 'instrucciones' 'fisica' %}"
+            class="boton boton-dorado">
+                Comenzar diagnóstico →
+            </a>
+
+        </article>
+
+
+        <!-- Química -->
+
+        <article class="tarjeta">
+
+            <div class="icono-asignatura">⚗</div>
+
+            <h3>Química</h3>
+
+            <p>
+                Explora fundamentos de
+                estructura atómica y enlaces.
+            </p>
+
+            <span class="proximamente">
+                Próximamente
+            </span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- Temas de matemáticas -->
+
+<section class="panel-temas" id="matematicas">
+
+    <h2>Temas de Matemáticas</h2>
+
+    <p>
+        Explora las áreas que formarán parte
+        de las evaluaciones diagnósticas.
+    </p>
+
+
+    <!-- Tema 1 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Números y operaciones</h3>
+            <p>
+                Fracciones, potencias, raíces
+                y operaciones básicas.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 2 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Álgebra</h3>
+            <p>
+                Expresiones algebraicas,
+                ecuaciones y factorización.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 3 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Funciones</h3>
+            <p>
+                Dominio, recorrido, gráficos
+                y función inversa.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 4 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Geometría</h3>
+            <p>
+                Figuras, áreas, perímetros
+                y conceptos geométricos.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+
+    <!-- Tema 5 -->
+
+    <div class="tema">
+
+        <div class="tema-info">
+            <h3>Trigonometría</h3>
+            <p>
+                Razones trigonométricas,
+                ángulos e identidades básicas.
+            </p>
+        </div>
+
+        <span class="estado-pendiente">
+            En preparación
+        </span>
+
+    </div>
+
+</section>
+
+{% endblock %}
