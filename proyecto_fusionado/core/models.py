@@ -1,8 +1,9 @@
+#modelos para interacturar con la base de datos
+
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User #esto es para la interacción de usuarios
 
 
-# 1. Modelo Estudiante
 class Estudiante(models.Model):
     # Conectamos con el sistema de usuarios de Django (maneja correo, nombre y contraseña)
     usuario = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -11,8 +12,7 @@ class Estudiante(models.Model):
     def __str__(self):
         return f"{self.usuario.first_name} {self.usuario.last_name} - {self.id_estudiante}"
 
-
-# 2. Modelo Evaluación Diagnóstica
+#interación con las evaluaciones
 class EvaluacionDiagnostica(models.Model):
     MATERIAS = [
         ('CAL', 'Cálculo'),
@@ -27,7 +27,7 @@ class EvaluacionDiagnostica(models.Model):
         return f"{self.titulo} ({self.get_materia_display()})"
 
 
-# 3. Modelo Resultados
+#almacerá los resultados de la evaluación diagnóstica
 class Resultado(models.Model):
     estudiante = models.ForeignKey(Estudiante, on_delete=models.CASCADE)
     evaluacion = models.ForeignKey(EvaluacionDiagnostica, on_delete=models.CASCADE)
@@ -39,7 +39,7 @@ class Resultado(models.Model):
         return f"Resultado de {self.estudiante.usuario.username} - {self.evaluacion.titulo}"
 
 
-# 4. Modelo Recursos (enlaces de la ruta de estudio)
+# 4.
 class Recurso(models.Model):
     TIPOS = [
         ('VID', 'Video'),
@@ -63,26 +63,28 @@ class Recurso(models.Model):
     def __str__(self):
         return f"{self.titulo} - Nivel {self.nivel_dificultad}"
 
-
-# 5. Modelo Ejercicio (banco de preguntas del diagnóstico)
+#tabla para almacenar los ejercicios
 class Ejercicio(models.Model):
     LETRAS = [('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')]
 
-    # NUEVO (fusión): campos que trae el CSV ejercicios_diagnostico_35.csv
-    codigo = models.CharField(max_length=10, unique=True, null=True, blank=True,
-                              help_text="Identificador del CSV (ej. NUM01). Permite reimportar sin duplicar.")
+    #id y enonciados
+    codigo = models.CharField(max_length=10, unique=True, null=True, blank=True) #este es el id de la pregunta
     tema = models.CharField(max_length=100, blank=True, default='')
-    fuente = models.CharField(max_length=100, blank=True, default='')
+    materia = models.CharField(max_length=3)  # CAL, ALG, FIS
+    enunciado = models.TextField()
+    
+   #alternativas de cada pregunta
     alt_a = models.CharField(max_length=200, blank=True, default='')
     alt_b = models.CharField(max_length=200, blank=True, default='')
     alt_c = models.CharField(max_length=200, blank=True, default='')
     alt_d = models.CharField(max_length=200, blank=True, default='')
-
-    enunciado = models.TextField()
-    materia = models.CharField(max_length=3)  # CAL, ALG, FIS
-    nivel_dificultad = models.IntegerField(choices=Recurso.NIVELES)
-    # CAMBIO (fusión): ahora guarda la LETRA correcta (A-D), no el texto.
     respuesta_correcta = models.CharField(max_length=1, choices=LETRAS)
+    
+    #dificultad de las preguntas
+    nivel_dificultad = models.IntegerField(choices=Recurso.NIVELES)
+    
+    #de donde se ha sacado y consejo para cada respuesta
+    fuente = models.CharField(max_length=100, blank=True, default='')
     retroalimentacion = models.TextField(help_text="Explicación si el estudiante se equivoca")
 
     class Meta:

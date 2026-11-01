@@ -1,3 +1,5 @@
+#interfaz gráfica de django para interacturar con la base de datos
+
 from django.contrib import admin
 from .models import Estudiante, EvaluacionDiagnostica, Resultado, Recurso, Ejercicio
 
