@@ -1,0 +1,59 @@
+{% extends 'diagnostico/base.html' %}
+
+{% block titulo %}Tu ruta de estudio | Diagnóstico USM{% endblock %}
+
+{% block contenido %}
+
+<section class="encabezado-evaluaciones">
+    <p class="etiqueta">TU RUTA DE ESTUDIO</p>
+    <h1>{{ asignatura }}: {{ correctas }} de {{ total }} correctas</h1>
+    <p>
+        Los temas están ordenados desde el que más necesitas reforzar.
+        Esto no es una calificación: es un mapa de por dónde empezar.
+    </p>
+</section>
+
+<section class="panel-temas">
+    {% for tema in temas %}
+    <div class="tema tema-ruta">
+
+        <div class="tema-info">
+            <h3>{{ tema.tema }}</h3>
+            <p>{{ tema.correctas }} de {{ tema.total }} correctas ({{ tema.porcentaje }}%)</p>
+
+            <div class="barra-tema"><div class="barra-tema-relleno estado-{{ tema.estado }}" style="width: {{ tema.porcentaje }}%"></div></div>
+
+            {% if tema.fallos %}
+            <details class="detalle-ruta">
+                <summary>Ver qué revisar ({{ tema.fallos|length }})</summary>
+                <ul>
+                    {% for e in tema.fallos %}
+                    <li><strong>{{ e.codigo }}</strong> ({{ e.fuente }}): {{ e.retroalimentacion }}</li>
+                    {% endfor %}
+                </ul>
+            </details>
+
+            <div class="recursos-ruta">
+                {% for r in tema.recursos %}
+                    {% if r.enlace %}
+                    <a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.titulo }}</a>
+                    <span class="meta-recurso">{{ r.get_tipo_display }} · {{ r.get_nivel_dificultad_display }}</span><br>
+                    {% endif %}
+                {% empty %}
+                    <span class="meta-recurso">Aún no hay recursos cargados para este tema.</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        <span class="etiqueta-estado estado-{{ tema.estado }}">{{ tema.etiqueta }}</span>
+
+    </div>
+    {% endfor %}
+</section>
+
+<div class="acciones-evaluacion">
+    <a href="{% url 'evaluacion' %}" class="boton-secundario">← Volver a evaluaciones</a>
+</div>
+
+{% endblock %}

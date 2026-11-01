@@ -1,0 +1,632 @@
+[
+  {
+    "model": "core.ejercicio",
+    "pk": 1001,
+    "fields": {
+      "codigo": "EXNUM01",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Calcula: −4(3 − 8) + 2³.",
+      "alt_a": "12",
+      "alt_b": "28",
+      "alt_c": "−12",
+      "alt_d": "22",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "3 − 8 = −5; −4(−5) = 20 y 2³ = 8. Total: 28."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1002,
+    "fields": {
+      "codigo": "EXNUM02",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Una chaqueta cuesta $48.000 y tiene 25% de descuento. ¿Cuál es el precio final?",
+      "alt_a": "$36.000",
+      "alt_b": "$12.000",
+      "alt_c": "$38.000",
+      "alt_d": "$40.000",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "El 25% de 48.000 es 12.000. Precio final: 48.000 − 12.000 = 36.000."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1003,
+    "fields": {
+      "codigo": "EXNUM03",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es el valor de 3/4 − 2/3 + 1/6?",
+      "alt_a": "1/12",
+      "alt_b": "1/6",
+      "alt_c": "1/4",
+      "alt_d": "5/12",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Con denominador 12: 9/12 − 8/12 + 2/12 = 3/12 = 1/4."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1004,
+    "fields": {
+      "codigo": "EXNUM04",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Simplifica (2³ · 2⁻⁵) / 2⁻¹.",
+      "alt_a": "1/2",
+      "alt_b": "2",
+      "alt_c": "1/4",
+      "alt_d": "4",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Se suman y restan exponentes: 3 − 5 − (−1) = −1. Resultado: 2⁻¹ = 1/2."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1005,
+    "fields": {
+      "codigo": "EXNUM05",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Si 5 cuadernos cuestan $7.500, ¿cuánto cuestan 8 cuadernos al mismo precio unitario?",
+      "alt_a": "$10.500",
+      "alt_b": "$11.500",
+      "alt_c": "$12.000",
+      "alt_d": "$13.500",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Cada cuaderno cuesta 7.500/5 = 1.500. Ocho cuestan 12.000."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1006,
+    "fields": {
+      "codigo": "EXNUM06",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Una población de 1.200 bacterias aumenta un 50% y luego disminuye un 20%. ¿Cuántas quedan?",
+      "alt_a": "1.200",
+      "alt_b": "1.440",
+      "alt_c": "1.500",
+      "alt_d": "1.320",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Primero 1.200·1,5 = 1.800; luego 1.800·0,8 = 1.440."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1007,
+    "fields": {
+      "codigo": "EXNUM07",
+      "tema": "Números y operaciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el valor de (√50 − √8)/√2?",
+      "alt_a": "2",
+      "alt_b": "3",
+      "alt_c": "5",
+      "alt_d": "7",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "√50 = 5√2 y √8 = 2√2. La diferencia es 3√2 y al dividir por √2 resulta 3."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1008,
+    "fields": {
+      "codigo": "EXFAC01",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Factoriza x² + 7x + 12.",
+      "alt_a": "(x+3)(x+4)",
+      "alt_b": "(x−3)(x−4)",
+      "alt_c": "(x+2)(x+6)",
+      "alt_d": "(x+1)(x+12)",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "3 + 4 = 7 y 3·4 = 12, luego (x+3)(x+4)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1009,
+    "fields": {
+      "codigo": "EXFAC02",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Desarrolla (2x − 3)².",
+      "alt_a": "4x² − 9",
+      "alt_b": "4x² − 6x + 9",
+      "alt_c": "4x² − 12x + 9",
+      "alt_d": "2x² − 12x + 9",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "El cuadrado de binomio es (2x)² − 2(2x)(3) + 3² = 4x² − 12x + 9."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1010,
+    "fields": {
+      "codigo": "EXFAC03",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Factoriza 9a² − 16b².",
+      "alt_a": "(9a−16b)(a+b)",
+      "alt_b": "(3a−4b)(3a+4b)",
+      "alt_c": "(3a−4b)²",
+      "alt_d": "(9a−4b)(a+4b)",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Es diferencia de cuadrados: (3a)² − (4b)² = (3a−4b)(3a+4b)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1011,
+    "fields": {
+      "codigo": "EXFAC04",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Simplifica (x² − 25)/(x − 5), con x ≠ 5.",
+      "alt_a": "x − 5",
+      "alt_b": "x² + 5",
+      "alt_c": "x + 5",
+      "alt_d": "x + 25",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "x² − 25 = (x−5)(x+5). Para x distinto de 5 se cancela x−5."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1012,
+    "fields": {
+      "codigo": "EXFAC05",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Si a + b = 10 y ab = 21, ¿cuánto vale a² + b²?",
+      "alt_a": "58",
+      "alt_b": "79",
+      "alt_c": "100",
+      "alt_d": "42",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "a² + b² = (a+b)² − 2ab = 100 − 42 = 58."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1013,
+    "fields": {
+      "codigo": "EXFAC06",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Factoriza 2x² − 5x − 3.",
+      "alt_a": "(2x+1)(x−3)",
+      "alt_b": "(2x−1)(x+3)",
+      "alt_c": "(x−1)(2x+3)",
+      "alt_d": "(2x−3)(x+1)",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "(2x+1)(x−3) = 2x² − 6x + x − 3 = 2x² − 5x − 3."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1014,
+    "fields": {
+      "codigo": "EXFAC07",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Simplifica (x² + 2x − 15)/(x² − 9), cuando x ≠ 3 y x ≠ −3.",
+      "alt_a": "(x+5)/(x+3)",
+      "alt_b": "(x−5)/(x−3)",
+      "alt_c": "(x+5)/(x−3)",
+      "alt_d": "(x−3)/(x+5)",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Numerador (x+5)(x−3), denominador (x−3)(x+3); se cancela x−3."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1015,
+    "fields": {
+      "codigo": "EXEC01",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Resuelve 5x − 7 = 18.",
+      "alt_a": "3",
+      "alt_b": "4",
+      "alt_c": "5",
+      "alt_d": "6",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "5x = 25 y x = 5."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1016,
+    "fields": {
+      "codigo": "EXEC02",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Resuelve 3(x − 2) = 2x + 5.",
+      "alt_a": "9",
+      "alt_b": "11",
+      "alt_c": "−11",
+      "alt_d": "7",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "3x−6 = 2x+5; restando 2x y sumando 6 queda x=11."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1017,
+    "fields": {
+      "codigo": "EXEC03",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "¿Cuáles son las soluciones reales de x² − 7x + 10 = 0?",
+      "alt_a": "1 y 10",
+      "alt_b": "−2 y −5",
+      "alt_c": "2 y 5",
+      "alt_d": "−2 y 5",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "(x−2)(x−5) = 0, así que x=2 o x=5."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1018,
+    "fields": {
+      "codigo": "EXEC04",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "La suma de dos números consecutivos es 47. ¿Cuál es el menor?",
+      "alt_a": "22",
+      "alt_b": "23",
+      "alt_c": "24",
+      "alt_d": "25",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Si son n y n+1: 2n+1=47, por tanto n=23."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1019,
+    "fields": {
+      "codigo": "EXEC05",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Resuelve el sistema: x + y = 9; x − y = 3. ¿Cuál es el par (x, y)?",
+      "alt_a": "(3,6)",
+      "alt_b": "(5,4)",
+      "alt_c": "(6,3)",
+      "alt_d": "(7,2)",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Sumando ecuaciones: 2x=12, luego x=6 y y=3."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1020,
+    "fields": {
+      "codigo": "EXEC06",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Resuelve (x−1)/3 + (x+2)/2 = 4.",
+      "alt_a": "4",
+      "alt_b": "3",
+      "alt_c": "5",
+      "alt_d": "6",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Multiplicando por 6: 2x−2+3x+6=24; 5x=20 y x=4."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1021,
+    "fields": {
+      "codigo": "EXEC07",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Para qué valor de k la ecuación 2x + k = 3x − 4 tiene solución x = 6?",
+      "alt_a": "−2",
+      "alt_b": "2",
+      "alt_c": "4",
+      "alt_d": "6",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Sustituyendo x=6: 12+k=18−4=14, por tanto k=2."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1022,
+    "fields": {
+      "codigo": "EXFUN01",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "Si f(x)=3x−4, ¿cuánto vale f(5)?",
+      "alt_a": "7",
+      "alt_b": "11",
+      "alt_c": "15",
+      "alt_d": "19",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "f(5)=3·5−4=11."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1023,
+    "fields": {
+      "codigo": "EXFUN02",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el dominio real de f(x)=1/(x−2)?",
+      "alt_a": "x ≥ 2",
+      "alt_b": "x ≠ 2",
+      "alt_c": "x > 2",
+      "alt_d": "x ≤ 2",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "El denominador no puede ser cero: x−2 ≠ 0, es decir x ≠ 2."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1024,
+    "fields": {
+      "codigo": "EXFUN03",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el vértice de f(x)=(x+2)²−3?",
+      "alt_a": "(2,−3)",
+      "alt_b": "(−2,3)",
+      "alt_c": "(−2,−3)",
+      "alt_d": "(3,−2)",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "La forma de vértice (x−h)²+k tiene vértice (h,k): aquí (−2,−3)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1025,
+    "fields": {
+      "codigo": "EXFUN04",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "Si f(x)=x−1 y g(x)=2x+3, ¿cuál es (f∘g)(x)?",
+      "alt_a": "2x+2",
+      "alt_b": "2x+4",
+      "alt_c": "2x−2",
+      "alt_d": "x+2",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "f(g(x)) = (2x+3)−1 = 2x+2."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1026,
+    "fields": {
+      "codigo": "EXFUN05",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es la función inversa de f(x)=4x−7?",
+      "alt_a": "(x−7)/4",
+      "alt_b": "4x+7",
+      "alt_c": "(x+7)/4",
+      "alt_d": "(7−x)/4",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "y=4x−7 implica x=(y+7)/4, así f⁻¹(x)=(x+7)/4."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1027,
+    "fields": {
+      "codigo": "EXFUN06",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el dominio real de f(x)=√(5−2x)?",
+      "alt_a": "x ≥ 5/2",
+      "alt_b": "x ≤ 5/2",
+      "alt_c": "x > 5",
+      "alt_d": "x ≤ −5/2",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Para raíz real, 5−2x ≥ 0, entonces x ≤ 5/2."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1028,
+    "fields": {
+      "codigo": "EXFUN07",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el valor máximo de f(x)=−2(x−3)²+8?",
+      "alt_a": "3",
+      "alt_b": "6",
+      "alt_c": "8",
+      "alt_d": "10",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "El término −2(x−3)² es no positivo; alcanza 0 cuando x=3, así el máximo es 8."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1029,
+    "fields": {
+      "codigo": "EXGEO01",
+      "tema": "Geometría y trigonometría",
+      "materia": "ALG",
+      "enunciado": "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. ¿Cuánto mide su hipotenusa?",
+      "alt_a": "11 cm",
+      "alt_b": "12 cm",
+      "alt_c": "13 cm",
+      "alt_d": "17 cm",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Por Pitágoras: √(5²+12²)=√169=13 cm."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1030,
+    "fields": {
+      "codigo": "EXGEO02",
+      "tema": "Geometría y trigonometría",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es el área de un rectángulo de 9 cm de largo y 4 cm de ancho?",
+      "alt_a": "26 cm²",
+      "alt_b": "36 cm²",
+      "alt_c": "18 cm²",
+      "alt_d": "13 cm²",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 1,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Área = largo por ancho = 9·4 = 36 cm²."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1031,
+    "fields": {
+      "codigo": "EXGEO03",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "¿Cuántos radianes equivalen a 120°?",
+      "alt_a": "π/3",
+      "alt_b": "2π/3",
+      "alt_c": "3π/4",
+      "alt_d": "5π/6",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "120°·π/180° = 2π/3 radianes."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1032,
+    "fields": {
+      "codigo": "EXGEO04",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el área de un círculo de diámetro 12 cm?",
+      "alt_a": "12π cm²",
+      "alt_b": "24π cm²",
+      "alt_c": "36π cm²",
+      "alt_d": "144π cm²",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "El radio es 6 cm; área = πr² = 36π cm²."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1033,
+    "fields": {
+      "codigo": "EXGEO05",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "En un triángulo rectángulo, un ángulo agudo θ tiene cateto opuesto de 8 e hipotenusa de 17. ¿Cuánto vale sen θ?",
+      "alt_a": "8/15",
+      "alt_b": "15/17",
+      "alt_c": "8/17",
+      "alt_d": "17/8",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": 2,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Seno = cateto opuesto / hipotenusa = 8/17."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1034,
+    "fields": {
+      "codigo": "EXGEO06",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "Si θ está en el primer cuadrante y cos θ = 3/5, ¿cuánto vale tan θ?",
+      "alt_a": "3/4",
+      "alt_b": "4/3",
+      "alt_c": "5/4",
+      "alt_d": "4/5",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Con cos=3/5, sen=4/5 por Pitágoras. Entonces tan=(4/5)/(3/5)=4/3."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 1035,
+    "fields": {
+      "codigo": "EXGEO07",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "Un cilindro tiene radio de 2 cm y altura de 7 cm. ¿Cuál es su volumen?",
+      "alt_a": "14π cm³",
+      "alt_b": "28π cm³",
+      "alt_c": "49π cm³",
+      "alt_d": "56π cm³",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": 3,
+      "fuente": "Banco complementario original — proyecto USM",
+      "retroalimentacion": "Volumen = πr²h = π·2²·7 = 28π cm³."
+    }
+  }
+]

@@ -1,0 +1,124 @@
+{% extends 'diagnostico/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Evaluación de {{ asignatura }} | USM
+{% endblock %}
+
+{% block contenido %}
+
+<section class="encabezado-evaluaciones">
+
+    <p class="etiqueta">
+        EVALUACIÓN DIAGNÓSTICA
+    </p>
+
+    <h1>Diagnóstico de {{ asignatura }}</h1>
+
+    <p>
+        Lee cada pregunta y selecciona
+        la alternativa que consideres correcta.
+    </p>
+
+</section>
+
+<!-- CONTENEDOR DE LA EVALUACIÓN -->
+
+{% if not preguntas %}
+<section class="panel-preguntas">
+    <h2>Próximamente</h2>
+    <p>Aún no hay preguntas cargadas para {{ asignatura }}.</p>
+    <a href="{% url 'evaluacion' %}" class="boton">Volver a evaluaciones</a>
+</section>
+{% else %}
+
+{{ preguntas|json_script:"datos-preguntas" }}
+
+<section class="panel-preguntas"
+         id="evaluacion-interactiva"
+         data-asignatura="{{ codigo_asignatura }}"
+         data-url-calificar="{% url 'calificar' codigo_asignatura %}"
+         data-url-ruta="{% url 'ruta_estudio' %}"
+         data-csrf="{{ csrf_token }}">
+
+    <!-- CABECERA -->
+
+    <div class="cabecera-preguntas">
+
+        <h2 id="numero-pregunta">
+            Pregunta 1 de {{ preguntas|length }}
+        </h2>
+
+        <div class="temporizador" id="temporizador">
+            40:00
+        </div>
+
+    </div>
+
+    <!-- BARRA DE PROGRESO -->
+
+    <div class="barra-progreso">
+        <div class="progreso-relleno"
+             id="progreso-relleno">
+        </div>
+    </div>
+
+    <!-- PREGUNTA -->
+
+    <div class="contenido-pregunta">
+
+        <h3 id="enunciado">
+            Aquí aparecerá la pregunta.
+        </h3>
+
+        <!-- Alternativas generadas con JavaScript -->
+
+        <div id="alternativas"
+             class="lista-alternativas">
+        </div>
+
+    </div>
+
+    <!-- BOTONES -->
+
+    <div class="acciones-evaluacion">
+
+        <button id="btn-anterior"
+                class="boton-secundario"
+                type="button">
+            ← Anterior
+        </button>
+
+        <button id="btn-siguiente"
+                class="boton"
+                type="button">
+            Siguiente →
+        </button>
+
+    </div>
+
+    <!-- Mensaje al terminar la demostración -->
+
+    <div id="mensaje-final"
+         class="mensaje-final"
+         hidden>
+
+        <h2>¡Evaluación finalizada!</h2>
+
+        <p id="texto-final">Calculando tus resultados…</p>
+
+        <a href="{% url 'ruta_estudio' %}"
+           class="boton"
+           id="enlace-ruta"
+           hidden>
+            Ver mi ruta de estudio →
+        </a>
+
+    </div>
+
+</section>
+{% endif %}
+
+<script src="{% static 'diagnostico/js/script.js' %}" defer></script>
+
+{% endblock %}
