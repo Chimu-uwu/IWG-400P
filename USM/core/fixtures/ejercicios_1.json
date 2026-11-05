@@ -1,0 +1,632 @@
+[
+  {
+    "model": "core.ejercicio",
+    "pk": 1,
+    "fields": {
+      "codigo": "NUM01",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Si x = −2, y = −3 y z = 4, ¿cuál es el valor de 3 + x(y − z) − z(x + y)?",
+      "alt_a": "31",
+      "alt_b": "37",
+      "alt_c": "−3",
+      "alt_d": "9",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "1",
+      "fuente": "Taller 1, P1",
+      "retroalimentacion": "Cuidado con la regla de signos: x(y − z) = (−2)(−7) = +14 y −z(x + y) = −4·(−5) = +20. Al sumar: 3 + 14 + 20 = 37."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 2,
+    "fields": {
+      "codigo": "NUM02",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Un repartidor de pizzas gana $36.000 diarios de salario y $11.000 de propinas. Cada día gasta $5.000 en gasolina y $10.000 en reparaciones de su moto. Si el mes tiene 30 días, ¿cuánto dinero le queda al final del mes?",
+      "alt_a": "$1.410.000",
+      "alt_b": "$1.080.000",
+      "alt_c": "$450.000",
+      "alt_d": "$960.000",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "1",
+      "fuente": "Taller 1, P3",
+      "retroalimentacion": "Calcula primero el balance diario: ingresos 36.000 + 11.000 = 47.000 y gastos 5.000 + 10.000 = 15.000, lo que deja $32.000 por día. Luego multiplica por 30 días: $960.000."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 3,
+    "fields": {
+      "codigo": "NUM03",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Sean a = 5/8, b = 3/4, c = 7/12 y d = 1/6. ¿Cuál es el valor de (a − b)/c + d?",
+      "alt_a": "−1/21",
+      "alt_b": "8/21",
+      "alt_c": "−3/14",
+      "alt_d": "1/21",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 2, P1",
+      "retroalimentacion": "a − b = 5/8 − 6/8 = −1/8. Dividir por c = 7/12 equivale a multiplicar por 12/7: (−1/8)(12/7) = −3/14. Falta sumar d = 1/6: −3/14 + 1/6 = (−9 + 7)/42 = −1/21."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 4,
+    "fields": {
+      "codigo": "NUM04",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "A un grupo de estudiantes se les pide elegir entre Cálculo, Álgebra y Geometría: 7/12 eligieron Cálculo, 1/4 eligieron Álgebra y el resto Geometría. Si 8 estudiantes eligieron Geometría, ¿cuántos estudiantes hay en total?",
+      "alt_a": "32",
+      "alt_b": "48",
+      "alt_c": "40",
+      "alt_d": "96",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 2, P5",
+      "retroalimentacion": "Cálculo y Álgebra suman 7/12 + 3/12 = 10/12 = 5/6, por lo que Geometría es 1/6 del total. Si 1/6 del total son 8 estudiantes, el total es 8 · 6 = 48."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 5,
+    "fields": {
+      "codigo": "NUM05",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es el valor de (1/3)^(−1) − (−6/7)^0 + (1/2)^2 : 2 ?",
+      "alt_a": "9/4",
+      "alt_b": "−31/8",
+      "alt_c": "25/8",
+      "alt_d": "17/8",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 3, P1d",
+      "retroalimentacion": "(1/3)^(−1) = 3; todo número no nulo elevado a 0 vale 1; (1/2)^2 = 1/4 y al dividir por 2 queda 1/8. Entonces 3 − 1 + 1/8 = 17/8."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 6,
+    "fields": {
+      "codigo": "NUM06",
+      "tema": "Números y operaciones",
+      "materia": "ALG",
+      "enunciado": "Al simplificar [2^(−4) · (2^3 : 2^4)] / [256 · 4^(−4) · 512^(−1)] se obtiene:",
+      "alt_a": "2^14",
+      "alt_b": "16",
+      "alt_c": "1/16",
+      "alt_d": "1/2^14",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "3",
+      "fuente": "Taller 3, P3",
+      "retroalimentacion": "Escribe todo en base 2. Numerador: 2^(−4) · 2^(3−4) = 2^(−5). Denominador: 2^8 · 2^(−8) · 2^(−9) = 2^(−9). Al dividir se restan exponentes: −5 − (−9) = 4, es decir 2^4 = 16."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 7,
+    "fields": {
+      "codigo": "NUM07",
+      "tema": "Números y operaciones",
+      "materia": "CAL",
+      "enunciado": "La radiación de una muestra se reduce a la mitad cada 6 horas y inicialmente emite 80 mSv. ¿Cuánta radiación emite después de 18 horas?",
+      "alt_a": "10 mSv",
+      "alt_b": "40 mSv",
+      "alt_c": "20 mSv",
+      "alt_d": "5 mSv",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 3, P9",
+      "retroalimentacion": "El modelo es R(t) = 80 · (1/2)^(t/6). Con t = 18 hay 18/6 = 3 reducciones a la mitad: 80 · (1/2)^3 = 80/8 = 10 mSv."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 8,
+    "fields": {
+      "codigo": "FAC01",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Si la suma de dos números es 30 y la suma de sus cuadrados es 600, ¿cuál es su producto?",
+      "alt_a": "1500",
+      "alt_b": "300",
+      "alt_c": "150",
+      "alt_d": "75",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 5, P1",
+      "retroalimentacion": "Usa (a + b)² = a² + 2ab + b². Entonces 30² = 600 + 2ab, luego 2ab = 300 y ab = 150. Ojo: 300 es 2ab, no ab."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 9,
+    "fields": {
+      "codigo": "FAC02",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Al simplificar [(u+v)² + (u+v)(u−v) − 2(u−v)²] / (2v) − (u − v) se obtiene:",
+      "alt_a": "2u − 2v",
+      "alt_b": "4u − 2v",
+      "alt_c": "2u",
+      "alt_d": "3u − v",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 5, P9",
+      "retroalimentacion": "El numerador es u² + 2uv + v² + u² − v² − 2u² + 4uv − 2v² = 6uv − 2v². Al dividir por 2v queda 3u − v. Luego se resta (u − v): 3u − v − u + v = 2u. Cuidado con el signo al restar el paréntesis."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 10,
+    "fields": {
+      "codigo": "FAC03",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Si a + b = 11 y a² + b² = 61, ¿cuál es el valor de E = a²/b + b²/a ?",
+      "alt_a": "341/60",
+      "alt_b": "1331/30",
+      "alt_c": "61/30",
+      "alt_d": "341/30",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "3",
+      "fuente": "Taller 5, P7",
+      "retroalimentacion": "E = (a³ + b³)/(ab). De (a+b)² = a² + 2ab + b² se obtiene ab = (121 − 61)/2 = 30. Luego a³ + b³ = (a+b)³ − 3ab(a+b) = 1331 − 990 = 341. Por lo tanto E = 341/30."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 11,
+    "fields": {
+      "codigo": "FAC04",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Al simplificar (x − 1) / [ x + 2 − (x² + 2) / ( x − (x − 2)/(x + 1) ) ] se obtiene:",
+      "alt_a": "(x − 1)/(x + 1)",
+      "alt_b": "x + 1",
+      "alt_c": "x − 1",
+      "alt_d": "1",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "3",
+      "fuente": "Taller 5, P2",
+      "retroalimentacion": "Simplifica desde adentro hacia afuera. x − (x − 2)/(x + 1) = (x² + x − x + 2)/(x + 1) = (x² + 2)/(x + 1). Luego (x² + 2) dividido por ese resultado da x + 1, y el denominador total queda x + 2 − (x + 1) = 1. Así, la expresión completa es (x − 1)/1 = x − 1."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 12,
+    "fields": {
+      "codigo": "FAC05",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Una piscina rectangular de 2a m de largo y b m de ancho tiene un borde uniforme de 2 m de ancho a su alrededor. ¿Cuántos m² de cerámica se necesitan para cubrir todo el borde?",
+      "alt_a": "8a + 4b + 16",
+      "alt_b": "(2a + 4)(b + 4)",
+      "alt_c": "2ab + 8a + 4b + 16",
+      "alt_d": "8a + 4b",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 5, P3",
+      "retroalimentacion": "El rectángulo exterior mide (2a + 4) por (b + 4). Para obtener solo el borde hay que restar el área de la piscina, 2ab: (2a + 4)(b + 4) − 2ab = 8a + 4b + 16. Si no restas la piscina, calculas el área total."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 13,
+    "fields": {
+      "codigo": "FAC06",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es la factorización de x² − 5x + 6?",
+      "alt_a": "(x + 2)(x − 3)",
+      "alt_b": "(x − 2)(x − 3)",
+      "alt_c": "(x − 1)(x − 6)",
+      "alt_d": "(x + 2)(x + 3)",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "Busca dos números que multiplicados den +6 y sumados den −5: son −2 y −3. Con +2 y +3 la suma sería +5, y con −1 y −6 sería −7. Siempre puedes verificar expandiendo el resultado."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 14,
+    "fields": {
+      "codigo": "FAC07",
+      "tema": "Factorización y productos notables",
+      "materia": "ALG",
+      "enunciado": "Al simplificar [ (x² − x − 12)/(x − 4) − 2 ]² : [ 1/(x − 2)^(−1) + 3 ] se obtiene:",
+      "alt_a": "x − 1",
+      "alt_b": "x + 5",
+      "alt_c": "x + 1",
+      "alt_d": "(x + 1)²",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "3",
+      "fuente": "Taller 5, P8",
+      "retroalimentacion": "Factoriza x² − x − 12 = (x − 4)(x + 3), así que la primera fracción queda x + 3 y el corchete es x + 3 − 2 = x + 1, que al cuadrado da (x + 1)². Por otro lado, 1/(x − 2)^(−1) = x − 2, y x − 2 + 3 = x + 1. Entonces (x + 1)² : (x + 1) = x + 1."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 15,
+    "fields": {
+      "codigo": "EC01",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Un artículo comprado por internet paga 30 % de impuesto sobre su precio, más $4.000 de transporte nacional. Si el precio es x dólares y el dólar vale $1.000, ¿cuál es el costo total en pesos?",
+      "alt_a": "1300x + 4000",
+      "alt_b": "1030x + 4000",
+      "alt_c": "1000x + 4000",
+      "alt_d": "1300x + 5200",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "1",
+      "fuente": "Taller 6, P3",
+      "retroalimentacion": "x dólares equivalen a 1000x pesos. El 30 % de impuesto se aplica al precio del producto: 1,3 · 1000x = 1300x. Los $4.000 de transporte se suman aparte, sin impuesto."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 16,
+    "fields": {
+      "codigo": "EC02",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Una balanza está en equilibrio con 4 cubos en un platillo y 3 cilindros y 5 esferas en el otro. Cada esfera pesa la mitad de un cubo y cada cilindro pesa 2 kg. ¿Cuánto pesa cada cubo?",
+      "alt_a": "12 kg",
+      "alt_b": "4 kg",
+      "alt_c": "3 kg",
+      "alt_d": "6 kg",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "1",
+      "fuente": "Taller 6, P2",
+      "retroalimentacion": "Sea c el peso de un cubo, entonces cada esfera pesa c/2. En equilibrio: 4c = 3·2 + 5·(c/2). Luego 4c − (5/2)c = 6, es decir (3/2)c = 6 y c = 4 kg."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 17,
+    "fields": {
+      "codigo": "EC03",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Las edades de un matrimonio suman 62 años. Se casaron hace 10 años y en ese momento la edad de la novia era 3/4 de la edad del novio. ¿Qué edad tienen actualmente?",
+      "alt_a": "Novio 36 años y novia 26 años",
+      "alt_b": "Novio 28 años y novia 34 años",
+      "alt_c": "Novio 34 años y novia 28 años",
+      "alt_d": "Novio 32 años y novia 30 años",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 6, P8",
+      "retroalimentacion": "Si el novio tiene x años hoy, la novia tiene 62 − x. Hace 10 años tenían x − 10 y 52 − x, y se cumple 52 − x = (3/4)(x − 10). Al resolver: x = 34 y la novia tiene 28. Comprobación: hace 10 años tenían 24 y 18, y 18 = (3/4)·24."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 18,
+    "fields": {
+      "codigo": "EC04",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "El costo de producir artículos es un costo fijo más un costo por cada artículo. Producir 20 artículos cuesta $512.000 y producir 40 cuesta $524.000. ¿Cuánto cuesta producir 11 artículos?",
+      "alt_a": "$506.600",
+      "alt_b": "$6.600",
+      "alt_c": "$500.600",
+      "alt_d": "$281.600",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 6, P4",
+      "retroalimentacion": "El costo es C(n) = fijo + k·n. Restando: 524.000 − 512.000 = 20k, entonces k = 600 por artículo. El fijo es 512.000 − 20·600 = 500.000. Para 11 artículos: 500.000 + 600·11 = 506.600. Una regla de tres no sirve porque existe un costo fijo."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 19,
+    "fields": {
+      "codigo": "EC05",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Un ganadero vende 5/7 de su ganado. Luego compra 60 cabezas y así tiene el doble de lo que tenía antes de la venta. ¿Cuántas cabezas tenía inicialmente?",
+      "alt_a": "28",
+      "alt_b": "70",
+      "alt_c": "35",
+      "alt_d": "49",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 6, P6",
+      "retroalimentacion": "Sea x el total inicial. Tras vender 5/7 quedan (2/7)x. Al comprar 60: (2/7)x + 60 = 2x, entonces 60 = (12/7)x y x = 35. Comprobación: vende 25, quedan 10, compra 60 y tiene 70 = 2 · 35."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 20,
+    "fields": {
+      "codigo": "EC06",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Una bicicleta sale de una ciudad a 25 km/h. Tres horas más tarde sale un coche a 125 km/h. ¿Cuánto tarda el coche en alcanzar a la bicicleta?",
+      "alt_a": "30 minutos",
+      "alt_b": "45 minutos",
+      "alt_c": "36 minutos",
+      "alt_d": "1 hora",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "2",
+      "fuente": "Taller 6, P9",
+      "retroalimentacion": "Cuando sale el coche, la bicicleta ya recorrió 25 · 3 = 75 km. El coche se acerca a 125 − 25 = 100 km/h, así que tarda 75/100 = 3/4 h = 45 minutos. Equivale a resolver 25(t + 3) = 125t."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 21,
+    "fields": {
+      "codigo": "EC07",
+      "tema": "Ecuaciones",
+      "materia": "ALG",
+      "enunciado": "Sea a ≠ 0. La solución de la ecuación (x − a)(x + a) = (x − 2a)² es:",
+      "alt_a": "5a/2",
+      "alt_b": "−5a/4",
+      "alt_c": "5a/4",
+      "alt_d": "3a/4",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "3",
+      "fuente": "Taller 6, P5a",
+      "retroalimentacion": "Desarrolla: x² − a² = x² − 4ax + 4a². Los x² se cancelan y queda 4ax = 5a². Como a ≠ 0, x = 5a/4. Cuidado con el signo al desarrollar (x − 2a)²."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 22,
+    "fields": {
+      "codigo": "FUN01",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el dominio de f(x) = √(x − 3)?",
+      "alt_a": "ℝ",
+      "alt_b": "[3, ∞)",
+      "alt_c": "(3, ∞)",
+      "alt_d": "(−∞, 3]",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "La raíz cuadrada solo existe si el radicando es mayor o igual a 0: x − 3 ≥ 0, es decir x ≥ 3. El 3 sí se incluye porque √0 = 0 está definido."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 23,
+    "fields": {
+      "codigo": "FUN02",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el dominio de f(x) = (x + 1)/(x² − 9)?",
+      "alt_a": "ℝ − {3}",
+      "alt_b": "ℝ − {−1}",
+      "alt_c": "ℝ − {−3, 3}",
+      "alt_d": "ℝ − {−3, −1, 3}",
+      "respuesta_correcta": "C",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "El denominador no puede ser 0: x² − 9 = (x − 3)(x + 3) = 0 cuando x = 3 o x = −3. El numerador no restringe el dominio; x = −1 solo anula el numerador, lo que es válido."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 24,
+    "fields": {
+      "codigo": "FUN03",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el recorrido de f(x) = −(x − 1)² + 5?",
+      "alt_a": "ℝ",
+      "alt_b": "[5, ∞)",
+      "alt_c": "(−∞, 1]",
+      "alt_d": "(−∞, 5]",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "Como (x − 1)² ≥ 0, entonces −(x − 1)² ≤ 0 y f(x) ≤ 5. El máximo, 5, se alcanza en x = 1 (vértice de una parábola que abre hacia abajo)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 25,
+    "fields": {
+      "codigo": "FUN04",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "Si f(x) = 2x² − 3x + 1, ¿cuánto vale f(−2)?",
+      "alt_a": "−1",
+      "alt_b": "15",
+      "alt_c": "3",
+      "alt_d": "5",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "f(−2) = 2·(−2)² − 3·(−2) + 1 = 2·4 + 6 + 1 = 15. Cuidado: (−2)² = 4 (positivo) y −3·(−2) = +6."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 26,
+    "fields": {
+      "codigo": "FUN05",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "Si f(x) = 2x + 1 y g(x) = x², ¿cuál es (f∘g)(x)?",
+      "alt_a": "x² + 2x + 1",
+      "alt_b": "(2x + 1)²",
+      "alt_c": "2x³ + x²",
+      "alt_d": "2x² + 1",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "(f∘g)(x) = f(g(x)): primero se evalúa g y su resultado se ingresa en f. Así f(x²) = 2x² + 1. La opción (2x + 1)² corresponde a (g∘f)(x), con el orden invertido."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 27,
+    "fields": {
+      "codigo": "FUN06",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "Si f(x) = (3x − 2)/5, ¿cuál es su función inversa f⁻¹(x)?",
+      "alt_a": "(5x − 2)/3",
+      "alt_b": "(3x + 2)/5",
+      "alt_c": "5/(3x − 2)",
+      "alt_d": "(5x + 2)/3",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "Escribe y = (3x − 2)/5 y despeja x: 5y = 3x − 2, luego 3x = 5y + 2 y x = (5y + 2)/3. Al intercambiar variables, f⁻¹(x) = (5x + 2)/3. La inversa no es el recíproco 1/f(x)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 28,
+    "fields": {
+      "codigo": "FUN07",
+      "tema": "Funciones",
+      "materia": "CAL",
+      "enunciado": "¿Cuál es el dominio de f(x) = √(x² − x − 6)?",
+      "alt_a": "ℝ",
+      "alt_b": "(−∞, −2] ∪ [3, ∞)",
+      "alt_c": "[−2, 3]",
+      "alt_d": "(−∞, −2) ∪ (3, ∞)",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "3",
+      "fuente": "Original",
+      "retroalimentacion": "Se requiere x² − x − 6 ≥ 0. Factoriza: (x − 3)(x + 2) ≥ 0. El producto es mayor o igual a 0 cuando ambos factores tienen el mismo signo o alguno es 0, es decir x ≤ −2 o x ≥ 3. Los extremos se incluyen porque √0 está definido."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 29,
+    "fields": {
+      "codigo": "GEO01",
+      "tema": "Geometría y trigonometría",
+      "materia": "ALG",
+      "enunciado": "Un triángulo rectángulo tiene catetos de 6 cm y 8 cm. ¿Cuánto mide su hipotenusa?",
+      "alt_a": "10 cm",
+      "alt_b": "14 cm",
+      "alt_c": "100 cm",
+      "alt_d": "7 cm",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "Por el teorema de Pitágoras: h² = 6² + 8² = 36 + 64 = 100, así que h = √100 = 10 cm. No se suman los catetos, y 100 es h², no h."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 30,
+    "fields": {
+      "codigo": "GEO02",
+      "tema": "Geometría y trigonometría",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es el área de un círculo de radio 5 cm?",
+      "alt_a": "5π cm²",
+      "alt_b": "10π cm²",
+      "alt_c": "50π cm²",
+      "alt_d": "25π cm²",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "El área de un círculo es A = πr² = π · 5² = 25π cm². La expresión 10π corresponde al perímetro (2πr), no al área."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 31,
+    "fields": {
+      "codigo": "GEO03",
+      "tema": "Geometría y trigonometría",
+      "materia": "ALG",
+      "enunciado": "¿Cuál es el volumen de un cilindro de radio 3 m y altura 5 m?",
+      "alt_a": "30π m³",
+      "alt_b": "45π m³",
+      "alt_c": "135π m³",
+      "alt_d": "15π m³",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "V = πr²h = π · 3² · 5 = 45π m³. Si olvidas elevar el radio al cuadrado obtienes 15π, y 30π corresponde a la superficie lateral (2πrh)."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 32,
+    "fields": {
+      "codigo": "GEO04",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "¿A cuántos radianes equivalen 150°?",
+      "alt_a": "5π/3",
+      "alt_b": "5π/6",
+      "alt_c": "2π/3",
+      "alt_d": "3π/4",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "Se usa que 180° = π rad. Entonces 150° · (π/180°) = 150π/180 = 5π/6."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 33,
+    "fields": {
+      "codigo": "GEO05",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "En un triángulo rectángulo los catetos miden 3 y 4 y la hipotenusa mide 5. Si θ es el ángulo opuesto al cateto de 3, ¿cuánto vale tan θ?",
+      "alt_a": "3/4",
+      "alt_b": "4/3",
+      "alt_c": "3/5",
+      "alt_d": "4/5",
+      "respuesta_correcta": "A",
+      "nivel_dificultad": "1",
+      "fuente": "Original",
+      "retroalimentacion": "tan θ = cateto opuesto / cateto adyacente = 3/4. Por su parte, 3/5 es sen θ, 4/5 es cos θ y 4/3 es el inverso de tan θ."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 34,
+    "fields": {
+      "codigo": "GEO06",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "Desde un punto ubicado a 20 m de la base de un edificio, el ángulo de elevación hasta su parte más alta es 60°. ¿Cuál es la altura del edificio?",
+      "alt_a": "10√3 m",
+      "alt_b": "20√3 m",
+      "alt_c": "(20√3)/3 m",
+      "alt_d": "40 m",
+      "respuesta_correcta": "B",
+      "nivel_dificultad": "2",
+      "fuente": "Original",
+      "retroalimentacion": "La altura es el cateto opuesto al ángulo y 20 m es el cateto adyacente, por lo que tan 60° = h/20. Como tan 60° = √3, h = 20√3 m. Si divides 20 entre tan 60° obtienes (20√3)/3, que corresponde a usar la razón al revés."
+    }
+  },
+  {
+    "model": "core.ejercicio",
+    "pk": 35,
+    "fields": {
+      "codigo": "GEO07",
+      "tema": "Geometría y trigonometría",
+      "materia": "CAL",
+      "enunciado": "Si sen θ = 3/5 y θ está en el segundo cuadrante, ¿cuánto vale tan θ?",
+      "alt_a": "−4/3",
+      "alt_b": "4/3",
+      "alt_c": "3/4",
+      "alt_d": "−3/4",
+      "respuesta_correcta": "D",
+      "nivel_dificultad": "3",
+      "fuente": "Original",
+      "retroalimentacion": "De sen²θ + cos²θ = 1 se obtiene cos²θ = 16/25, así que cos θ = ±4/5. En el segundo cuadrante el coseno es negativo: cos θ = −4/5. Entonces tan θ = sen θ / cos θ = (3/5)/(−4/5) = −3/4."
+    }
+  }
+]

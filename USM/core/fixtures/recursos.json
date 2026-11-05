@@ -1,0 +1,506 @@
+[
+{
+  "model": "core.recurso",
+  "pk": 1,
+  "fields": {
+    "titulo": "Fracciones",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=pOykmkuRnw4&list=PLeySRPnY35dH5PTh8sRqEHkzxbez41Bex"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 2,
+  "fields": {
+    "titulo": "Porcentajes",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=2UmRmPVq8-M&list=PLeySRPnY35dHSFM5LWSwItwTUID8-yq1U"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 3,
+  "fields": {
+    "titulo": "Proporcionalidad",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=Jz-GPF9iHo8&list=PLeySRPnY35dFMDdrmFcPT6zDKXADrjiVd&utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 4,
+  "fields": {
+    "titulo": "Potencias",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=vwzZEB0SzCI&list=PLeySRPnY35dEk0kZGO3bgpg_tYmIR0ms0"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 5,
+  "fields": {
+    "titulo": "Raíces",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=o8iImyEq6Ug&list=PLeySRPnY35dEhgikNGJjXZUOpWGt6LGzn"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 6,
+  "fields": {
+    "titulo": "Operaciones combinadas con potencias y raíces",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=1aJTsc11Czs"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 7,
+  "fields": {
+    "titulo": "Suma y resta",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=v4h6KZkQ1Q0"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 8,
+  "fields": {
+    "titulo": "Signos de agrupación",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=jdqwzCL_PG0"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 9,
+  "fields": {
+    "titulo": "Operaciones combinadas",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=29Z-cRvi7RQ"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 10,
+  "fields": {
+    "titulo": "Guía de potencias y raíces",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1Wy-OeR6pHQ3n_1oJwXBPE0DT2TiwLA9w/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 11,
+  "fields": {
+    "titulo": "Guía de razones, proporciones y porcentajes",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Números y operaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1JteX6-KFBR0IGLUtSmHBXpeLxHbA63LO/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 12,
+  "fields": {
+    "titulo": "Curso de factorización",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=sSfO1CsKJ4g&list=PLeySRPnY35dGY6GX7xO_lruvCIS6NkfR-"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 13,
+  "fields": {
+    "titulo": "Productos notables",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=I6FH_gaVYDk&list=PLeySRPnY35dG4W2Peocr_lrp0TP_0SkYe"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 14,
+  "fields": {
+    "titulo": "Fracciones algebraicas — Parte 1",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=RR7KsXv-g6w&list=PLeySRPnY35dFlFY4ciYidsdXWuqqKuBMC"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 15,
+  "fields": {
+    "titulo": "Fracciones algebraicas — Parte 2",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=PxycywivGUQ&list=PLYELZSZcFU6UVjDuVY2xxaFk1jzTAKpYm"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 16,
+  "fields": {
+    "titulo": "Guía de expresiones algebraicas y productos notables",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1xa_EasnTYw9VaZnhU40eV4vqMISXY5Pj/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 17,
+  "fields": {
+    "titulo": "Guía de factorización y fracciones algebraicas",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Factorización y productos notables",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1ODjLDfjTUruFZKMomFMaOVU76rTbwp15/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 18,
+  "fields": {
+    "titulo": "¿Qué es una función?",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=HAeSkQH1C-I"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 19,
+  "fields": {
+    "titulo": "Evaluar funciones — Ejemplo 1",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=tZ8AYOOB9G4"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 20,
+  "fields": {
+    "titulo": "Evaluar funciones — Ejemplo 2",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=ulRV6rTSdt0"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 21,
+  "fields": {
+    "titulo": "Evaluar funciones — Ejemplo 3",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=8soQJtYlPis"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 22,
+  "fields": {
+    "titulo": "Representación de funciones",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=A7OrJ8IlIeE"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 23,
+  "fields": {
+    "titulo": "Dominio y rango",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=H40lcwlgPMk"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 24,
+  "fields": {
+    "titulo": "Dominio de funciones — Refuerzo",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=Ok329x84tLQ"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 25,
+  "fields": {
+    "titulo": "Clase general de funciones",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=ojiMGOqwwCE"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 26,
+  "fields": {
+    "titulo": "Función compuesta e inversa",
+    "tipo": "VID",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=RIgzDV-AV_Q&list=PLeySRPnY35dEKKcGIdu6NYgMShNyuK9rA"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 27,
+  "fields": {
+    "titulo": "Guia de funciones",
+    "tipo": "GUI",
+    "materia": "CAL",
+    "tema": "Funciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1VgEAq0YoTL4pgI0cJEM12cuJ2sNUowCq/view?usp=drive_link"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 28,
+  "fields": {
+    "titulo": "Teorema de Pitágoras — Explicación",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=w6nh99v3r4A"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 29,
+  "fields": {
+    "titulo": "Teorema de Pitágoras — Aplicaciones",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=WXRdDDo1xbA"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 30,
+  "fields": {
+    "titulo": "¿Qué son las razones trigonométricas?",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=7pUi5lvLf7c"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 31,
+  "fields": {
+    "titulo": "Razones trigonométricas — Ejemplo 1",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=_IWs9s3XdOA"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 32,
+  "fields": {
+    "titulo": "Círculo unitario y cuadrantes",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=bTCc8fQl-s0"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 33,
+  "fields": {
+    "titulo": "Área y volumen de cuerpos",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=4A23ycIyLe4&list=PLiWRH3aE37VLV90nDzDbOCFHWr8HyRvpj"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 34,
+  "fields": {
+    "titulo": "Conversión entre grados y radianes",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=eugYrpGNWmU&list=PLeySRPnY35dF1AI1j1G-0U8P-xvmTUn1V"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 35,
+  "fields": {
+    "titulo": "Guía de ejercicios de Geometría",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1Fo5Qg7SkENErUG3iqSBtPtwPRNHDOnN8/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 36,
+  "fields": {
+    "titulo": "Guía de Trigonometría M2",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Geometría y trigonometría",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/13jjqLwUqFVwC3D02OFnRr_O2mdNVg2Fy/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 37,
+  "fields": {
+    "titulo": "Ecuaciones — explicación",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Ecuaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=xNRpLqixHvY"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 38,
+  "fields": {
+    "titulo": "Ecuaciones de primer grado",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Ecuaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=FrJ-tBTpxzo&list=PLeySRPnY35dGIC7UWuH0zUDm8BtFXics9"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 39,
+  "fields": {
+    "titulo": "Sistemas de ecuaciones",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Ecuaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=oQQfG1zIPMc&list=PLeySRPnY35dErygDdRDp1912SPALoaBmZ"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 40,
+  "fields": {
+    "titulo": "Ecuaciones cuadráticas",
+    "tipo": "VID",
+    "materia": "ALG",
+    "tema": "Ecuaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://www.youtube.com/watch?v=aYkOsFHCqPM&list=PLeySRPnY35dF11EWceCxzKtcaZidCkXXh"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 41,
+  "fields": {
+    "titulo": "Guía de ecuaciones lineales",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Ecaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1I46MJDbhDOBKcUS4lwuv_JQW7JCJ9lTx/view"
+  }
+},
+{
+  "model": "core.recurso",
+  "pk": 42,
+  "fields": {
+    "titulo": "Guía de ecuaciones cuadráticas",
+    "tipo": "GUI",
+    "materia": "ALG",
+    "tema": "Ecuaciones",
+    "nivel_dificultad": 1,
+    "enlace": "https://drive.google.com/file/d/1HunL_0hr6o9ZeHVsL23yHGVBmbKqMhoZ/view"
+  }
+}
+]
