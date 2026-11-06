@@ -7,7 +7,7 @@
 
     <title>{% block titulo %}Diagnóstico USM{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'diagnostico/css/estilos.css' %}?=6">
+    <link rel="stylesheet" href="{% static 'diagnostico/css/estilos.css' %}?=8">
 </head>
 <body>
 
@@ -42,6 +42,12 @@
                 <a href="{% url 'ruta_estudio' %}"
                 class="{% if request.resolver_match.url_name == 'ruta_estudio' %}activo{% endif %}">
                     Recursos
+                </a>
+
+                <!-- ALMACEN -->
+                <a href="{% url 'almacen' %}"
+                class="{% if request.resolver_match.url_name == 'almacen' %}activo{% endif %}">
+                    Almacén
                 </a>
 
                 <!-- CERRAR SECION -->

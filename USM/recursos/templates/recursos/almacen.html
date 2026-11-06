@@ -1,0 +1,47 @@
+{% extends "diagnostico/base.html" %}
+
+{% block contenido %}
+
+<section class="panel-recursos">
+
+    <h1>Almacén de recursos académicos</h1>
+
+    <p>
+        Explora videos, guías y material complementario
+        para reforzar tus conocimientos.
+    </p>
+
+    <div class="filtros-recursos">
+        <a href="?tema=todos">Todos</a>
+        <a href="?tema=Números y operaciones">Números</a>
+        <a href="?tema=Factorización y productos notables">Factorización</a>
+        <a href="?tema=Ecuaciones">Ecuaciones</a>
+        <a href="?tema=Funciones">Funciones</a>
+        <a href="?tema=Geometría y trigonometría">Geometría y trigonometría</a>
+    </div>
+
+    <div class="lista-recursos">
+
+        {% for recurso in recursos %}
+
+            <div class="tarjeta-recurso">
+                <h3>{{ recurso.titulo }}</h3>
+
+                <p>{{ recurso.tema }}</p>
+
+                <a href="{{ recurso.enlace }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Ver recurso
+                </a>
+            </div>
+
+        {% empty %}
+            <p>No hay recursos disponibles.</p>
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

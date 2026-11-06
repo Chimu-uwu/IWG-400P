@@ -1,9 +1,24 @@
 from django.db.models import Max, Q
 from django.shortcuts import redirect, render
-
 from core.models import Ejercicio, Recurso
 from diagnostico.views import ASIGNATURAS, CLAVE_SESION
+from django.contrib.auth.decorators import login_required
+from core.models import Recurso
 
+
+@login_required
+def vista_almacen(request):
+    tema = request.GET.get("tema", "todos")
+
+    recursos = Recurso.objects.all().order_by("tema", "titulo")
+
+    if tema != "todos":
+        recursos = recursos.filter(tema=tema)
+
+    return render(request, "recursos/almacen.html", {
+        "recursos": recursos,
+        "tema_actual": tema,
+    })
 
 def _estado(porcentaje):
     if porcentaje < 50:

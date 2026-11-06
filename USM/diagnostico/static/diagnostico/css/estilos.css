@@ -871,3 +871,106 @@ button:disabled {
     background: #d6a43f;
     color: #10294b;
 }
+
+/* ALMACÉN DE RECURSOS */
+
+.panel-recursos {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 4px 18px #10294b12;
+}
+
+.panel-recursos h1 {
+    color: var(--azul);
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.panel-recursos > p {
+    color: #66788c;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Filtros por tema */
+
+.filtros-recursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filtros-recursos a {
+    padding: 10px 16px;
+    background: var(--fondo);
+    color: var(--azul);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.filtros-recursos a:hover {
+    background: var(--azul);
+    color: white;
+    border-color: var(--azul);
+}
+
+/* Distribución de tarjetas */
+
+.lista-recursos {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 18px;
+}
+
+/* Tarjetas individuales */
+
+.tarjeta-recurso {
+    background: #f7f9fc;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s ease;
+}
+
+.tarjeta-recurso:hover {
+    border-color: var(--dorado);
+    transform: translateY(-3px);
+}
+
+.tarjeta-recurso h3 {
+    color: var(--azul);
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.tarjeta-recurso p {
+    color: #66788c;
+    font-size: 14px;
+}
+
+/* Botones de recursos */
+
+.tarjeta-recurso a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--azul);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.tarjeta-recurso a:hover {
+    background: var(--dorado);
+    color: var(--azul);
+}

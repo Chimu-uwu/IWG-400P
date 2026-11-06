@@ -6,7 +6,7 @@
     "titulo": "Fracciones",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=pOykmkuRnw4&list=PLeySRPnY35dH5PTh8sRqEHkzxbez41Bex"
   }
@@ -18,7 +18,7 @@
     "titulo": "Porcentajes",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=2UmRmPVq8-M&list=PLeySRPnY35dHSFM5LWSwItwTUID8-yq1U"
   }
@@ -30,7 +30,7 @@
     "titulo": "Proporcionalidad",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=Jz-GPF9iHo8&list=PLeySRPnY35dFMDdrmFcPT6zDKXADrjiVd&utm_source=chatgpt.com"
   }
@@ -42,7 +42,7 @@
     "titulo": "Potencias",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=vwzZEB0SzCI&list=PLeySRPnY35dEk0kZGO3bgpg_tYmIR0ms0"
   }
@@ -51,10 +51,10 @@
   "model": "core.recurso",
   "pk": 5,
   "fields": {
-    "titulo": "RaÌces",
+    "titulo": "Ra√≠¬≠ces",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=o8iImyEq6Ug&list=PLeySRPnY35dEhgikNGJjXZUOpWGt6LGzn"
   }
@@ -63,10 +63,10 @@
   "model": "core.recurso",
   "pk": 6,
   "fields": {
-    "titulo": "Operaciones combinadas con potencias y raÌces",
+    "titulo": "Operaciones combinadas con potencias y ra√≠¬≠ces",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=1aJTsc11Czs"
   }
@@ -78,7 +78,7 @@
     "titulo": "Suma y resta",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=v4h6KZkQ1Q0"
   }
@@ -87,10 +87,10 @@
   "model": "core.recurso",
   "pk": 8,
   "fields": {
-    "titulo": "Signos de agrupaciÛn",
+    "titulo": "Signos de agrupaci√≥n",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=jdqwzCL_PG0"
   }
@@ -102,7 +102,7 @@
     "titulo": "Operaciones combinadas",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=29Z-cRvi7RQ"
   }
@@ -111,10 +111,10 @@
   "model": "core.recurso",
   "pk": 10,
   "fields": {
-    "titulo": "GuÌa de potencias y raÌces",
+    "titulo": "Gu√≠¬≠a de potencias y ra√≠¬≠ces",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/1Wy-OeR6pHQ3n_1oJwXBPE0DT2TiwLA9w/view"
   }
@@ -123,10 +123,10 @@
   "model": "core.recurso",
   "pk": 11,
   "fields": {
-    "titulo": "GuÌa de razones, proporciones y porcentajes",
+    "titulo": "Gu√≠¬≠a de razones, proporciones y porcentajes",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "N˙meros y operaciones",
+    "tema": "N√∫meros y operaciones",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/1JteX6-KFBR0IGLUtSmHBXpeLxHbA63LO/view"
   }
@@ -135,10 +135,10 @@
   "model": "core.recurso",
   "pk": 12,
   "fields": {
-    "titulo": "Curso de factorizaciÛn",
+    "titulo": "Curso de factorizaci√≥n",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=sSfO1CsKJ4g&list=PLeySRPnY35dGY6GX7xO_lruvCIS6NkfR-"
   }
@@ -150,7 +150,7 @@
     "titulo": "Productos notables",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=I6FH_gaVYDk&list=PLeySRPnY35dG4W2Peocr_lrp0TP_0SkYe"
   }
@@ -159,10 +159,10 @@
   "model": "core.recurso",
   "pk": 14,
   "fields": {
-    "titulo": "Fracciones algebraicas ó Parte 1",
+    "titulo": "Fracciones algebraicas -- Parte 1",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=RR7KsXv-g6w&list=PLeySRPnY35dFlFY4ciYidsdXWuqqKuBMC"
   }
@@ -171,10 +171,10 @@
   "model": "core.recurso",
   "pk": 15,
   "fields": {
-    "titulo": "Fracciones algebraicas ó Parte 2",
+    "titulo": "Fracciones algebraicas -- Parte 2",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=PxycywivGUQ&list=PLYELZSZcFU6UVjDuVY2xxaFk1jzTAKpYm"
   }
@@ -183,10 +183,10 @@
   "model": "core.recurso",
   "pk": 16,
   "fields": {
-    "titulo": "GuÌa de expresiones algebraicas y productos notables",
+    "titulo": "Gu√≠¬≠a de expresiones algebraicas y productos notables",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/1xa_EasnTYw9VaZnhU40eV4vqMISXY5Pj/view"
   }
@@ -195,10 +195,10 @@
   "model": "core.recurso",
   "pk": 17,
   "fields": {
-    "titulo": "GuÌa de factorizaciÛn y fracciones algebraicas",
+    "titulo": "Gu√≠¬≠a de factorizaci√≥n y fracciones algebraicas",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "FactorizaciÛn y productos notables",
+    "tema": "Factorizaci√≥n y productos notables",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/1ODjLDfjTUruFZKMomFMaOVU76rTbwp15/view"
   }
@@ -207,7 +207,7 @@
   "model": "core.recurso",
   "pk": 18,
   "fields": {
-    "titulo": "øQuÈ es una funciÛn?",
+    "titulo": "¬øQu√© es una funci√≥n?",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -219,7 +219,7 @@
   "model": "core.recurso",
   "pk": 19,
   "fields": {
-    "titulo": "Evaluar funciones ó Ejemplo 1",
+    "titulo": "Evaluar funciones -- Ejemplo 1",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -231,7 +231,7 @@
   "model": "core.recurso",
   "pk": 20,
   "fields": {
-    "titulo": "Evaluar funciones ó Ejemplo 2",
+    "titulo": "Evaluar funciones -- Ejemplo 2",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -243,7 +243,7 @@
   "model": "core.recurso",
   "pk": 21,
   "fields": {
-    "titulo": "Evaluar funciones ó Ejemplo 3",
+    "titulo": "Evaluar funciones -- Ejemplo 3",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -255,7 +255,7 @@
   "model": "core.recurso",
   "pk": 22,
   "fields": {
-    "titulo": "RepresentaciÛn de funciones",
+    "titulo": "Representaci√≥n de funciones",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -279,7 +279,7 @@
   "model": "core.recurso",
   "pk": 24,
   "fields": {
-    "titulo": "Dominio de funciones ó Refuerzo",
+    "titulo": "Dominio de funciones -- Refuerzo",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -303,7 +303,7 @@
   "model": "core.recurso",
   "pk": 26,
   "fields": {
-    "titulo": "FunciÛn compuesta e inversa",
+    "titulo": "Funci√≥n compuesta e inversa",
     "tipo": "VID",
     "materia": "CAL",
     "tema": "Funciones",
@@ -327,10 +327,10 @@
   "model": "core.recurso",
   "pk": 28,
   "fields": {
-    "titulo": "Teorema de Pit·goras ó ExplicaciÛn",
+    "titulo": "Teorema de Pit√°goras -- Explicaci√≥n",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=w6nh99v3r4A"
   }
@@ -339,10 +339,10 @@
   "model": "core.recurso",
   "pk": 29,
   "fields": {
-    "titulo": "Teorema de Pit·goras ó Aplicaciones",
+    "titulo": "Teorema de Pit√°goras -- Aplicaciones",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=WXRdDDo1xbA"
   }
@@ -351,10 +351,10 @@
   "model": "core.recurso",
   "pk": 30,
   "fields": {
-    "titulo": "øQuÈ son las razones trigonomÈtricas?",
+    "titulo": "¬øQu√© son las razones trigonom√©tricas?",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=7pUi5lvLf7c"
   }
@@ -363,10 +363,10 @@
   "model": "core.recurso",
   "pk": 31,
   "fields": {
-    "titulo": "Razones trigonomÈtricas ó Ejemplo 1",
+    "titulo": "Razones trigonom√©tricas -- Ejemplo 1",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=_IWs9s3XdOA"
   }
@@ -375,10 +375,10 @@
   "model": "core.recurso",
   "pk": 32,
   "fields": {
-    "titulo": "CÌrculo unitario y cuadrantes",
+    "titulo": "C√≠¬≠rculo unitario y cuadrantes",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=bTCc8fQl-s0"
   }
@@ -387,10 +387,10 @@
   "model": "core.recurso",
   "pk": 33,
   "fields": {
-    "titulo": "¡rea y volumen de cuerpos",
+    "titulo": "√Årea y volumen de cuerpos",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=4A23ycIyLe4&list=PLiWRH3aE37VLV90nDzDbOCFHWr8HyRvpj"
   }
@@ -399,10 +399,10 @@
   "model": "core.recurso",
   "pk": 34,
   "fields": {
-    "titulo": "ConversiÛn entre grados y radianes",
+    "titulo": "Conversi√≥n entre grados y radianes",
     "tipo": "VID",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://www.youtube.com/watch?v=eugYrpGNWmU&list=PLeySRPnY35dF1AI1j1G-0U8P-xvmTUn1V"
   }
@@ -411,10 +411,10 @@
   "model": "core.recurso",
   "pk": 35,
   "fields": {
-    "titulo": "GuÌa de ejercicios de GeometrÌa",
+    "titulo": "Gu√≠¬≠a de ejercicios de Geometr√≠¬≠a",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/1Fo5Qg7SkENErUG3iqSBtPtwPRNHDOnN8/view"
   }
@@ -423,10 +423,10 @@
   "model": "core.recurso",
   "pk": 36,
   "fields": {
-    "titulo": "GuÌa de TrigonometrÌa M2",
+    "titulo": "Gu√≠¬≠a de Trigonometr√≠¬≠a M2",
     "tipo": "GUI",
     "materia": "ALG",
-    "tema": "GeometrÌa y trigonometrÌa",
+    "tema": "Geometr√≠¬≠a y trigonometr√≠¬≠a",
     "nivel_dificultad": 1,
     "enlace": "https://drive.google.com/file/d/13jjqLwUqFVwC3D02OFnRr_O2mdNVg2Fy/view"
   }
@@ -435,7 +435,7 @@
   "model": "core.recurso",
   "pk": 37,
   "fields": {
-    "titulo": "Ecuaciones ó explicaciÛn",
+    "titulo": "Ecuaciones -- explicaci√≥n",
     "tipo": "VID",
     "materia": "ALG",
     "tema": "Ecuaciones",
@@ -471,7 +471,7 @@
   "model": "core.recurso",
   "pk": 40,
   "fields": {
-    "titulo": "Ecuaciones cuadr·ticas",
+    "titulo": "Ecuaciones cuadr√°ticas",
     "tipo": "VID",
     "materia": "ALG",
     "tema": "Ecuaciones",
@@ -483,7 +483,7 @@
   "model": "core.recurso",
   "pk": 41,
   "fields": {
-    "titulo": "GuÌa de ecuaciones lineales",
+    "titulo": "Gu√≠¬≠a de ecuaciones lineales",
     "tipo": "GUI",
     "materia": "ALG",
     "tema": "Ecaciones",
@@ -495,7 +495,7 @@
   "model": "core.recurso",
   "pk": 42,
   "fields": {
-    "titulo": "GuÌa de ecuaciones cuadr·ticas",
+    "titulo": "Gu√≠¬≠a de ecuaciones cuadr√°ticas",
     "tipo": "GUI",
     "materia": "ALG",
     "tema": "Ecuaciones",
