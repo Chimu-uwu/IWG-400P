@@ -27,7 +27,7 @@ if (contenedor) {
     const respuestas = Array(preguntas.length).fill(null);
 
     // Tiempo de demostración: 40 minutos.
-    let tiempoRestante = 10;
+    let tiempoRestante = 40 * 60 ;
 
     let evaluacionFinalizada = false;
   
