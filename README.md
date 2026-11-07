@@ -1,11 +1,4 @@
 # IWG-400P
-# IWG-400P — Plataforma de Diagnóstico Académico USM
-
-## Descripción
-
-Proyecto desarrollado para la asignatura IWG-400P de la Universidad Técnica Federico Santa María.
-
-La aplicación permite a los estudiantes realizar evaluaciones diagnósticas de Matemáticas, consultar sus resultados y acceder a recursos educativos personalizados según los contenidos que necesitan reforzar.
 
 ## Funcionalidades principales
 
